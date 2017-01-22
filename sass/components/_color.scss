@@ -370,11 +370,11 @@ $colors: (
 }
 
 @function color($color, $tone) {
-  @if map-has-key($colors, $color) {
-    $curr_color: map-get($colors, $color);
-    @if map-has-key($curr_color, $tone) {
-      @return map-get($curr_color, $tone);
-    }
-  }
-  @return null;
+	@if map-has-key($colors, $color) {
+		$curr_color: map-get($colors, $color);
+		@if map-has-key($curr_color, $tone) {
+			@return map-get($curr_color, $tone);
+		}
+	}
+	@return null;
 }

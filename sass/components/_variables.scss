@@ -1,9 +1,13 @@
-$primary-color: color("yellow", "500");
-$secondary-color: color("brown", "900");
-$text-color: color("black", "500");
+$primary-color: color("cyan", "300") !default;
+$secondary-color: color("yellow", "300") !default;
+$text-color: color("black", "500") !default;
+$default-color: color("grey", "600") !default;
 $success-color: color("green", "500") !default;
 $error-color: color("red", "500") !default;
 $link-color: color("blue", "500") !default;
+
+$button-color: $secondary-color !default;
+$button-text-color: color("black", "500") !default;
 
 $roboto-font-path: "../fonts/roboto/" !default;
 

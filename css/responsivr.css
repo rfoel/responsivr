@@ -2511,7 +2511,7 @@ html {
 }
 
 a {
-  color: #039be5;
+  color: #2196F3;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2713,8 +2713,16 @@ h6 {
   font-weight: 300;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .small {
@@ -2745,14 +2753,8 @@ h6 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.section.no-pad {
+.section.no-padding {
   padding: 0;
-}
-.section.no-pad-bot {
-  padding-bottom: 0;
-}
-.section.no-pad-top {
-  padding-top: 0;
 }
 
 .row {
@@ -3316,6 +3318,140 @@ h6 {
   .row .col.push-l12 {
     left: 100%;
   }
+}
+
+.btn, .btn-large, .btn-round-large, .btn-round, .btn-flat {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  margin: 12px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:hover, .btn-large:hover, .btn-round-large:hover, .btn-round:hover, .btn:focus, .btn-large:focus, .btn-round-large:focus, .btn-round:focus, .btn-flat:hover, .btn-flat:focus {
+  background-color: #ffee5d;
+  color: #000000;
+}
+
+.btn, .btn-large, .btn-round-large, .btn-round {
+  background: #fff176;
+  color: #000000;
+  border-bottom: 3px solid #dcc600;
+}
+
+.btn-large, .btn-round-large {
+  height: 44px;
+  line-height: 44px;
+}
+
+.btn-flat {
+  color: #000000;
+}
+.btn-flat:hover, .btn-flat:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-round, .btn-round-large {
+  border-radius: 18px;
+}
+
+.btn-round-large {
+  border-radius: 36px;
+}
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  border-radius: 0;
+  outline: none;
+  height: 36px;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+input:not([type]):focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=time]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+textarea.materialize-textarea:focus {
+  border-bottom: 1px solid #fff176;
+  box-shadow: 0 1px 0 0 #fff176 !important;
+}
+input:not([type]):valid + label,
+input[type=text]:valid + label,
+input[type=password]:valid + label,
+input[type=email]:valid + label,
+input[type=url]:valid + label,
+input[type=time]:valid + label,
+input[type=date]:valid + label,
+input[type=datetime]:valid + label,
+input[type=datetime-local]:valid + label,
+input[type=tel]:valid + label,
+input[type=number]:valid + label,
+input[type=search]:valid + label,
+textarea.materialize-textarea:valid + label {
+  font-size: 12px;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+input:not([type]):focus + label,
+input[type=text]:focus + label,
+input[type=password]:focus + label,
+input[type=email]:focus + label,
+input[type=url]:focus + label,
+input[type=time]:focus + label,
+input[type=date]:focus + label,
+input[type=datetime]:focus + label,
+input[type=datetime-local]:focus + label,
+input[type=tel]:focus + label,
+input[type=number]:focus + label,
+input[type=search]:focus + label,
+textarea.materialize-textarea:focus + label {
+  color: #fff176;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: #757575;
+}
+
+:-moz-placeholder {
+  color: #757575;
+}
+
+::-moz-placeholder {
+  color: #757575;
+}
+
+:-ms-input-placeholder {
+  color: #757575;
 }
 
 /*# sourceMappingURL=responsivr.css.map */

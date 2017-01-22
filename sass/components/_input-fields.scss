@@ -1,0 +1,64 @@
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $default-color;
+    border-radius: 0;
+    outline: none;
+    height:36px;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+
+    &:focus {
+        border-bottom: 1px solid $secondary-color;
+        box-shadow: 0 1px 0 0 $secondary-color !important;
+    }
+
+    &+label {
+        font-size: 12px;
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+    }
+
+    &:focus + label {
+        color: $secondary-color;
+        opacity: 1;
+    }
+}
+
+.input-group {
+
+}
+
+
+::-webkit-input-placeholder {
+    color: $default-color;
+}
+
+:-moz-placeholder {
+    color: $default-color;
+}
+
+::-moz-placeholder {
+    color: $default-color;
+}
+
+:-ms-input-placeholder {
+    color: $default-color;
+}
