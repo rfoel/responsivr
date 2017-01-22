@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: color("grey", "lighten-2");
+}
+
+.hide-on-small-only, .hide-on-small-and-down {
+    @media #{$small-and-down} {
+        display: none !important;
+    }
+}
+.hide-on-med-and-down {
+    @media #{$medium-and-down} {
+        display: none !important;
+    }
+}
+.hide-on-med-and-up {
+    @media #{$medium-and-up} {
+        display: none !important;
+    }
+}
+.hide-on-med-only {
+    @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+        display: none !important;
+    }
+}
+.hide-on-large-only {
+    @media #{$large-and-up} {
+        display: none !important;
+    }
+}
+.display-on-large {
+    @media #{$large-and-up} {
+        display: block !important;
+    }
+}
+.display-on-medium {
+    @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+        display: block !important;
+    }
+}
+.display-on-small {
+    @media #{$small-and-down} {
+        display: block !important;
+    }
+}
+.display-on-medium-and-up {
+    @media #{$medium-and-up} {
+        display: block !important;
+    }
+}
+.display-on-medium-and-down {
+    @media #{$medium-and-down} {
+        display: block !important;
+    }
+}
+
+.center-on-small-only {
+    @media #{$small-and-down} {
+        text-align: center;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.left-align {
+    text-align: left;
+}
+.right-align {
+    text-align: right
+}
+.center, .center-align {
+    text-align: center;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
