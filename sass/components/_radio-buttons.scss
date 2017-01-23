@@ -1,0 +1,28 @@
+input[type=radio] + label {
+  &:before {
+    border-radius: 50%;
+  }
+  &:after {
+    top: 0;
+    left: 0;
+    width: $radio-dot-size;
+    height: $radio-dot-size;
+    border-radius: 50%;
+    background: $secondary-color;
+  }
+}
+
+input[type=radio]:checked + label {
+  &:before {
+    border: 2px solid $secondary-color;
+  }
+}
+
+input[type=radio]:checked[disabled] + label {
+  &:before {
+    border: 2px solid lighten($default-color, 20%);
+  }
+  &:after {
+    background: lighten($default-color, 20%);
+  }
+}

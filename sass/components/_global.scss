@@ -126,3 +126,65 @@ a {
 .no-padding {
     padding: 0 !important;
 }
+
+input[type=radio],
+input[type=checkbox] {
+    position: absolute;
+    display: none;
+}
+input[type=radio][disabled],
+input[type=checkbox][disabled] {
+    cursor: not-allowed;
+}
+
+input[type=radio] + label,
+input[type=checkbox] + label {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+    height: 36px;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: $checkbox-size;
+        height: $checkbox-size;
+        content: '';
+        border: 2px solid $default-color;
+    }
+    &:after {
+        position: absolute;
+        display: none;
+        content: '';
+    }
+}
+
+input[type=radio][disabled] + label,
+input[type=checkbox][disabled] + label {
+    color: lighten($default-color, 20%);
+
+    &:hover {
+        &:before {
+            border: 2px solid lighten($default-color, 20%);
+            animation-name: none;
+        }
+    }
+    &:before {
+        border-color: lighten($default-color, 20%);
+    }
+}
+
+
+input[type=radio]:checked + label,
+input[type=checkbox]:checked + label {
+    &:before {
+        animation-name: none;
+    }
+    &:after {
+        display: block;
+    }
+}

@@ -1,7 +1,7 @@
 $primary-color: color("cyan", "300") !default;
 $secondary-color: color("yellow", "300") !default;
 $text-color: color("black", "500") !default;
-$default-color: color("grey", "600") !default;
+$default-color: color("grey", "500") !default;
 $success-color: color("green", "500") !default;
 $error-color: color("red", "500") !default;
 $link-color: color("blue", "500") !default;
@@ -32,6 +32,8 @@ $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
 
 $num-cols: 12 !default;
-$gutter-width: 1rem !default;
-$element-top-margin: 1 !default;
-$element-bottom-margin: 1 !default;
+$gutter: 2rem !default;
+
+$radio-size: 20px !default;
+$radio-dot-size: 20px !default;
+$checkbox-size: 20px !default;

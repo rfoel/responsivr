@@ -1,0 +1,30 @@
+input[type=checkbox] + label {
+  &:after {
+    top: 2px;
+    left: 7px;
+    box-sizing: border-box;
+    width: 6px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+
+    border-top: 0;
+    border-left: 0;
+  }
+}
+
+input[type=checkbox]:checked + label {
+  &:before {
+    border: $secondary-color;
+    background: $secondary-color;
+  }
+}
+
+input[type=checkbox]:checked[disabled] + label {
+  &:before {
+    border: lighten($default-color, 20%);
+    background: lighten($default-color, 20%);
+  }
+}
