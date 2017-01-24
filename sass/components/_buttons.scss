@@ -7,7 +7,14 @@
     text-transform: uppercase;
     vertical-align: middle;
     cursor: pointer;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     -webkit-tap-highlight-color: transparent;
+    
     &:hover, &:focus {
         background-color: desaturate(darken($button-color, 10%),30%);
         color: $button-text-color;
@@ -37,9 +44,9 @@
         background-color: rgba(0,0,0,.05);
 
         &:active {
-             background-color: rgba(0,0,0,.15);
-        }
-    }
+           background-color: rgba(0,0,0,.15);
+       }
+   }
 }
 
 .btn-round {

@@ -3411,6 +3411,12 @@ h6 {
   text-transform: uppercase;
   vertical-align: middle;
   cursor: pointer;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 .btn:hover, .btn-large:hover, .btn-round-large:hover, .btn-round:hover, .btn:focus, .btn-large:focus, .btn-round-large:focus, .btn-round:focus, .btn-flat:hover, .btn-flat:focus {
