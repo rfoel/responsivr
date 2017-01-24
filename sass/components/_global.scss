@@ -132,23 +132,19 @@ input[type=checkbox] {
     position: absolute;
     display: none;
 }
-input[type=radio][disabled],
-input[type=checkbox][disabled] {
-    cursor: not-allowed;
-}
 
 input[type=radio] + label,
 input[type=checkbox] + label {
     position: relative;
     display: block;
-    padding-left: 30px;
+    padding: 10px 0 10px 30px;
     cursor: pointer;
     vertical-align: middle;
-    height: 36px;
+    // height: 36px;
 
     &:before {
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 0;
         display: inline-block;
         width: $checkbox-size;

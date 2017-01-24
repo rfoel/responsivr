@@ -2647,24 +2647,18 @@ input[type=checkbox] {
   display: none;
 }
 
-input[type=radio][disabled],
-input[type=checkbox][disabled] {
-  cursor: not-allowed;
-}
-
 input[type=radio] + label,
 input[type=checkbox] + label {
   position: relative;
   display: block;
-  padding-left: 30px;
+  padding: 10px 0 10px 30px;
   cursor: pointer;
   vertical-align: middle;
-  height: 36px;
 }
 input[type=radio] + label:before,
 input[type=checkbox] + label:before {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   display: inline-block;
   width: 20px;
@@ -3631,7 +3625,7 @@ select option {
 }
 
 input[type=checkbox] + label:after {
-  top: 2px;
+  top: 12px;
   left: 7px;
   box-sizing: border-box;
   width: 6px;
@@ -3658,7 +3652,7 @@ input[type=radio] + label:before {
   border-radius: 50%;
 }
 input[type=radio] + label:after {
-  top: 0;
+  top: 10px;
   left: 0;
   width: 20px;
   height: 20px;

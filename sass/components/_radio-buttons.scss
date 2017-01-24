@@ -3,7 +3,7 @@ input[type=radio] + label {
     border-radius: 50%;
   }
   &:after {
-    top: 0;
+    top: 10px;
     left: 0;
     width: $radio-dot-size;
     height: $radio-dot-size;
