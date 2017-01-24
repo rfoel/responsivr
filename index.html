@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/responsivr.css">
 </head>
 <body class="cyan-300">
-	<div class="container white">
+	<div class="container">
 		<div class="row center">
 			<div class="col s12 cyan-400">
 				<img src="images/logo.svg" style="width: 150px;">
@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12">
+			<div class="col s12 white">
 				<h3 class="thin">Buttons</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<a class="btn ripple">Button</a>
@@ -30,117 +30,127 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12">
+			<div class="col s12 white">
 				<h3 class="thin">Forms</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-				<div class="col s12">
-					<h4>Input fields</h4>
-					<div class="input-group col s12 m6">
-						<input type="text" name="text">
-						<label for="text">Label</label>
-					</div>
-
-					<div class="input-group col s12 m6">
-						<input type="text" name="text" placeholder="Placeholder">
-						<label for="text">Label</label>
-					</div>
-
-					<div class="input-group col s12 m6">
-						<input type="password" name="password">
-						<label for="password">Password</label>
-					</div>
-
-					<div class="input-group col s12 m6">
-						<input type="text" name="text" disabled>
-						<label for="text">Disabled</label>
-					</div>
+			</div>
+		</div>
+		<div class="row">					
+			<div class="col s12 white">
+				<h4>Input fields</h4>
+				<div class="input-group col s12 m6">
+					<input type="text" name="text">
+					<label for="text">Label</label>
 				</div>
 
-				<div class="col s12">
-					<h4>Textarea</h4>
-					<div class="input-group col s12">
-						<textarea id="textarea"></textarea>
-						<label for="textarea">Textarea</label>
-					</div>
+				<div class="input-group col s12 m6">
+					<input type="text" name="text" placeholder="Placeholder">
+					<label for="text">Label</label>
 				</div>
 
-				<div class="col s12">
-					<h4>Select</h4>
-					<div class="input-group col s12 m6">
-						<select>
-							<option selected>Select an option</option>
-							<option value="">Audi</option>
-							<option value="">BMW</option>
-							<option value="">Mercedes</option>
-							<option value="">Volvo</option>
-						</select>
-						<label>Select</label>
-					</div>
-
-					<div class="input-group col s12 m6">
-						<select disabled>
-							<option selected>Select an option</option>
-							<option value="">Audi</option>
-							<option value="">BMW</option>
-							<option value="">Mercedes</option>
-							<option value="">Volvo</option>
-						</select>
-						<label>Select disabled</label>
-					</div>
+				<div class="input-group col s12 m6">
+					<input type="password" name="password">
+					<label for="password">Password</label>
 				</div>
 
-				<div class="col s12">
-					<h4>Radio buttons</h4>
-					<div class="input-group col s12">
-						<input type="radio" id="2" name="group1">
-						<label for="2">
-							Radio button
-						</label>
+				<div class="input-group col s12 m6">
+					<input type="text" name="text" disabled>
+					<label for="text">Disabled</label>
+				</div>
+			</div>
+		</div>
 
-						<input type="radio" id="3" name="group1" checked>
-						<label for="3">
-							Checked
-						</label>
+		<div class="row">
+			<div class="col s12 white">
+				<h4>Textarea</h4>
+				<div class="input-group col s12">
+					<textarea id="textarea"></textarea>
+					<label for="textarea">Textarea</label>
+				</div>
+			</div>
+		</div>
 
-						<input type="radio" id="4" name="group1" disabled>
-						<label for="4">
-							Disabled
-						</label>
-
-						<input type="radio" id="5" name="group2" disabled checked>
-						<label for="5">
-							Disabled and checked
-						</label>
-					</div>
+		<div class="row">
+			<div class="col s12 white">
+				<h4>Select</h4>
+				<div class="input-group col s12 m6">
+					<select>
+						<option selected>Select an option</option>
+						<option value="">Audi</option>
+						<option value="">BMW</option>
+						<option value="">Mercedes</option>
+						<option value="">Volvo</option>
+					</select>
+					<label>Select</label>
 				</div>
 
-				<div class="col s12">
-					<h4>Checkboxes</h4>
-					<div class="input-group col s12">
-						<input type="checkbox" id="checkbox1" name="group3">
-						<label for="checkbox1">
-							Checkbox
-						</label>
+				<div class="input-group col s12 m6">
+					<select disabled>
+						<option selected>Select an option</option>
+						<option value="">Audi</option>
+						<option value="">BMW</option>
+						<option value="">Mercedes</option>
+						<option value="">Volvo</option>
+					</select>
+					<label>Select disabled</label>
+				</div>
+			</div>
+		</div>
 
-						<input type="checkbox" id="checkbox2" name="group3" checked>
-						<label for="checkbox2">
-							Checked
-						</label>
+		<div class="row">
+			<div class="col s12 white">
+				<h4>Radio buttons</h4>
+				<div class="input-group col s12">
+					<input type="radio" id="2" name="group1">
+					<label for="2">
+						Radio button
+					</label>
 
-						<input type="checkbox" id="checkbox3" name="group3" disabled>
-						<label for="checkbox3">
-							Disabled
-						</label>
+					<input type="radio" id="3" name="group1" checked>
+					<label for="3">
+						Checked
+					</label>
 
-						<input type="checkbox" id="checkbox4" name="group3" disabled checked>
-						<label for="checkbox4">
-							Disabled and checked
-						</label>
-					</div>
+					<input type="radio" id="4" name="group1" disabled>
+					<label for="4">
+						Disabled
+					</label>
+
+					<input type="radio" id="5" name="group2" disabled checked>
+					<label for="5">
+						Disabled and checked
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 white">
+				<h4>Checkboxes</h4>
+				<div class="input-group col s12">
+					<input type="checkbox" id="checkbox1" name="group3">
+					<label for="checkbox1">
+						Checkbox
+					</label>
+
+					<input type="checkbox" id="checkbox2" name="group3" checked>
+					<label for="checkbox2">
+						Checked
+					</label>
+
+					<input type="checkbox" id="checkbox3" name="group3" disabled>
+					<label for="checkbox3">
+						Disabled
+					</label>
+
+					<input type="checkbox" id="checkbox4" name="group3" disabled checked>
+					<label for="checkbox4">
+						Disabled and checked
+					</label>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>
