@@ -2696,6 +2696,32 @@ input[type=checkbox]:checked + label:after {
   display: block;
 }
 
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .2;
+  transition: 0s;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -3384,11 +3410,15 @@ h6 {
   margin: 12px;
   text-transform: uppercase;
   vertical-align: middle;
+  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
 .btn:hover, .btn-large:hover, .btn-round-large:hover, .btn-round:hover, .btn:focus, .btn-large:focus, .btn-round-large:focus, .btn-round:focus, .btn-flat:hover, .btn-flat:focus {
-  background-color: #ffee5d;
+  background-color: #e3d55f;
   color: #000000;
+}
+.btn:hover:active, .btn-large:hover:active, .btn-round-large:hover:active, .btn-round:hover:active, .btn:focus:active, .btn-large:focus:active, .btn-round-large:focus:active, .btn-round:focus:active, .btn-flat:hover:active, .btn-flat:focus:active {
+  background-color: #d0c672;
 }
 
 .btn, .btn-large, .btn-round-large, .btn-round {
@@ -3407,6 +3437,9 @@ h6 {
 }
 .btn-flat:hover, .btn-flat:focus {
   background-color: rgba(0, 0, 0, 0.05);
+}
+.btn-flat:hover:active, .btn-flat:focus:active {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .btn-round, .btn-round-large {

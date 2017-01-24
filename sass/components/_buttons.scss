@@ -6,10 +6,15 @@
     margin: 12px;
     text-transform: uppercase;
     vertical-align: middle;
+    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     &:hover, &:focus {
-        background-color: darken($button-color, 5%);
+        background-color: desaturate(darken($button-color, 10%),30%);
         color: $button-text-color;
+
+        &:active {
+            background-color: desaturate(darken($button-color, 10%),50%);
+        }
     }
 }
 
@@ -30,6 +35,10 @@
 
     &:hover, &:focus {
         background-color: rgba(0,0,0,.05);
+
+        &:active {
+             background-color: rgba(0,0,0,.15);
+        }
     }
 }
 
