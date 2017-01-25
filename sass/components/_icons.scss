@@ -1,0 +1,29 @@
+i {
+	line-height: inherit;
+
+	&.left {
+		float: left;
+		margin-right: 15px;
+	}
+	&.right {
+		float: right;
+		margin-left: 15px;
+	}
+	&.tiny, &.fa {
+		font-size: 1rem;
+		vertical-align: middle;  	
+	}
+	&.small, &.fa-2x {
+		font-size: 2rem;
+	}
+	&.medium, &.fa-3x {
+		font-size: 4rem;
+	}
+	&.large, &.fa-4x {
+		font-size: 6rem;
+	}
+
+	&.fa-2x, &.fa-3x, &.fa-4x {
+		vertical-align: top;  	
+	}
+}

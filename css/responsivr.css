@@ -2806,10 +2806,6 @@ h6 {
   font-weight: 600;
 }
 
-.small {
-  font-size: 75%;
-}
-
 .italic {
   font-style: italic;
 }
@@ -3708,6 +3704,34 @@ input[type=radio]:checked[disabled] + label:before {
 }
 input[type=radio]:checked[disabled] + label:after {
   background: #d1d1d1;
+}
+
+i {
+  line-height: inherit;
+}
+i.left {
+  float: left;
+  margin-right: 15px;
+}
+i.right {
+  float: right;
+  margin-left: 15px;
+}
+i.tiny, i.fa {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+i.small, i.fa-2x {
+  font-size: 2rem;
+}
+i.medium, i.fa-3x {
+  font-size: 4rem;
+}
+i.large, i.fa-4x {
+  font-size: 6rem;
+}
+i.fa-2x, i.fa-3x, i.fa-4x {
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=responsivr.css.map */
