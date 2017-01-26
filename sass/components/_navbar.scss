@@ -56,7 +56,7 @@
 		}
 	}
 
-	.brand-logo {
+	.brand {
 		color: $navbar-text-color;
 		letter-spacing: 0.1rem;
 		font-size: 1.3em;
@@ -64,5 +64,73 @@
 		display: inline-block;
 		white-space: nowrap;
 		padding: 0 ($navbar-height / 4);
+	}
+
+	.toggle {
+		color: $navbar-text-color;
+		height: $navbar-height;
+		padding: 0 ($navbar-height / 4);
+
+		i {
+			line-height: $navbar-height;
+		}
+	}
+}
+
+.navbar-side {
+	margin: 0;
+	padding: 0;
+	height: $navbar-height;
+	line-height: $navbar-height;
+	background-color: $navbar-color;
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: -300px;
+
+	.visible {
+		right: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		li a {
+			display: block;
+			text-align: center;
+			padding: 0 ($navbar-height / 4);
+			color: $navbar-text-color;
+			text-decoration: none;
+			position: relative;
+			letter-spacing: 0.1rem;
+
+			&:before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: $secondary-color;
+				visibility: hidden;
+				-webkit-transform: scaleX(0);
+				transform: scaleX(0);
+			}
+
+			&:hover:before {
+				visibility: visible;
+				-webkit-transform: scaleX(1);
+				transform: scaleX(1);
+			}
+
+			&:hover {
+				background: $secondary-color;
+			}
+		}
 	}
 }
