@@ -4,15 +4,15 @@
     width: 100%;
 }
 
-@media #{$medium-and-up} {
+@media #{$tablet-and-up} {
     .container {
         width: 90%;
     }
 }
 
-@media #{$large-and-up} {
+@media #{$desktop-and-up} {
     .container {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -50,7 +50,7 @@
         $i: 1;
         @while $i <= $num-cols {
             $perc: unquote((100 / ($num-cols / $i)) + "%");
-            &.s#{$i} {
+            &.phone-#{$i} {
                 width: $perc;
                 margin-left: auto;
                 left: auto;
@@ -62,24 +62,24 @@
         $i: 1;
         @while $i <= $num-cols {
             $perc: unquote((100 / ($num-cols / $i)) + "%");
-            &.offset-s#{$i} {
+            &.offset-phone-#{$i} {
                 margin-left: $perc;
             }
-            &.pull-s#{$i} {
+            &.pull-phone-#{$i} {
                 right: $perc;
             }
-            &.push-s#{$i} {
+            &.push-phone-#{$i} {
                 left: $perc;
             }
             $i: $i + 1;
         }
 
-        @media #{$medium-and-up} {
+        @media #{$tablet-and-up} {
 
             $i: 1;
             @while $i <= $num-cols {
                 $perc: unquote((100 / ($num-cols / $i)) + "%");
-                &.m#{$i} {
+                &.tablet-#{$i} {
                     width: $perc;
                     margin-left: auto;
                     left: auto;
@@ -91,25 +91,25 @@
             $i: 1;
             @while $i <= $num-cols {
                 $perc: unquote((100 / ($num-cols / $i)) + "%");
-                &.offset-m#{$i} {
+                &.offset-tablet-#{$i} {
                     margin-left: $perc;
                 }
-                &.pull-m#{$i} {
+                &.pull-tablet-#{$i} {
                     right: $perc;
                 }
-                &.push-m#{$i} {
+                &.push-tablet-#{$i} {
                     left: $perc;
                 }
                 $i: $i + 1;
             }
         }
 
-        @media #{$large-and-up} {
+        @media #{$desktop-and-up} {
 
             $i: 1;
             @while $i <= $num-cols {
                 $perc: unquote((100 / ($num-cols / $i)) + "%");
-                &.l#{$i} {
+                &.desktop-#{$i} {
                     width: $perc;
                     margin-left: auto;
                     left: auto;
@@ -121,13 +121,13 @@
             $i: 1;
             @while $i <= $num-cols {
                 $perc: unquote((100 / ($num-cols / $i)) + "%");
-                &.offset-l#{$i} {
+                &.offset-desktop-#{$i} {
                     margin-left: $perc;
                 }
-                &.pull-l#{$i} {
+                &.pull-desktop#{$i} {
                     right: $perc;
                 }
-                &.push-l#{$i} {
+                &.push-desktop#{$i} {
                     left: $perc;
                 }
                 $i: $i + 1;

@@ -78,17 +78,21 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
+    font-family: 'Open Sans';
     color: $default-color;
 }
 
 :-moz-placeholder {
+    font-family: 'Open Sans';
     color: $default-color;
 }
 
 ::-moz-placeholder {
+    font-family: 'Open Sans';
     color: $default-color;
 }
 
 :-ms-input-placeholder {
+    font-family: 'Open Sans';
     color: $default-color;
 }

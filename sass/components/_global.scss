@@ -18,59 +18,59 @@ a {
     background-color: color("grey", "lighten-2");
 }
 
-.hide-on-small-only, .hide-on-small-and-down {
-    @media #{$small-and-down} {
+.hide-on-phone-only, .hide-on-phone-and-down {
+    @media #{$phone-and-down} {
         display: none !important;
     }
 }
-.hide-on-med-and-down {
-    @media #{$medium-and-down} {
+.hide-on-tablet-and-down {
+    @media #{$tablet-and-down} {
         display: none !important;
     }
 }
-.hide-on-med-and-up {
-    @media #{$medium-and-up} {
+.hide-on-tablet-and-up {
+    @media #{$tablet-and-up} {
         display: none !important;
     }
 }
-.hide-on-med-only {
-    @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+.hide-on-tablet-only {
+    @media only screen and (min-width: $phone-screen) and (max-width: $tablet-screen) {
         display: none !important;
     }
 }
-.hide-on-large-only {
-    @media #{$large-and-up} {
+.hide-on-desktop-only {
+    @media #{$desktop-and-up} {
         display: none !important;
     }
 }
-.display-on-large {
-    @media #{$large-and-up} {
+.display-on-desktop {
+    @media #{$desktop-and-up} {
         display: block !important;
     }
 }
-.display-on-medium {
-    @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+.display-on-tablet {
+    @media only screen and (min-width: $phone-screen) and (max-width: $tablet-screen) {
         display: block !important;
     }
 }
-.display-on-small {
-    @media #{$small-and-down} {
+.display-on-phone {
+    @media #{$phone-and-down} {
         display: block !important;
     }
 }
-.display-on-medium-and-up {
-    @media #{$medium-and-up} {
+.display-on-tablet-and-up {
+    @media #{$tablet-and-up} {
         display: block !important;
     }
 }
-.display-on-medium-and-down {
-    @media #{$medium-and-down} {
+.display-on-tablet-and-down {
+    @media #{$tablet-and-down} {
         display: block !important;
     }
 }
 
-.center-on-small-only {
-    @media #{$small-and-down} {
+.center-on-phone-only {
+    @media #{$phone-and-down} {
         text-align: center;
     }
 }

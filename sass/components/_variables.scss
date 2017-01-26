@@ -6,10 +6,15 @@ $success-color: color("green", "500") !default;
 $error-color: color("red", "500") !default;
 $link-color: color("blue", "500") !default;
 
+$navbar-color: $primary-color !default;
+$navbar-text-color: color("white", "500") !default;
+$navbar-height: 50px;
+
 $button-color: $secondary-color !default;
 $button-text-color: color("black", "500") !default;
 
-$roboto-font-path: "../fonts/roboto/" !default;
+$OpenSansPath: "../fonts" !default;
+$OpenSansVersion: "1.1.0" !default; 
 
 $h1-fontsize: 4.2rem !default;
 $h2-fontsize: 3.56rem !default;
@@ -18,18 +23,18 @@ $h4-fontsize: 2.28rem !default;
 $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1rem !default;
 
-$small-screen-up: 601px !default;
-$medium-screen-up: 961px !default;
-$large-screen-up: 1281px !default;
-$small-screen: 600px !default;
-$medium-screen: 960px !default;
-$large-screen: 1280px !default;
+$phone-screen-up: 601px !default;
+$tablet-screen-up: 961px !default;
+$desktop-screen-up: 1281px !default;
+$phone-screen: 600px !default;
+$tablet-screen: 960px !default;
+$desktop-screen: 1280px !default;
 
-$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
-$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
-$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
-$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
-$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$tablet-and-up: "only screen and (min-width : #{$phone-screen-up})" !default;
+$desktop-and-up: "only screen and (min-width : #{$tablet-screen-up})" !default;
+$phone-and-down: "only screen and (max-width : #{$phone-screen})" !default;
+$tablet-and-down: "only screen and (max-width : #{$tablet-screen})" !default;
+$tablet-only: "only screen and (min-width : #{$phone-screen-up}) and (max-width : #{$tablet-screen})" !default;
 
 $num-cols: 12 !default;
 $gutter: 2rem !default;

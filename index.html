@@ -13,70 +13,74 @@
 
 	<script src="https://use.fontawesome.com/6172352ab8.js"></script>
 </head>
-<body class="cyan-300">
-	<div class="container">
-		<div class="row center">
-			<div class="col s12 cyan-400">
-				<img src="images/logo.svg" style="width: 150px;">
-				<h1 class="white-text thin">Responsiv<span class="black-text normal">r</span></h1>
-			</div>
+<body>
+	<div class="row center">
+		<div class="col phone-12 cyan-400">
+			<h1 class="white-text light">Responsiv<span class="black-text normal">r</span></h1>
 		</div>
+	</div>
+	<nav class="navbar">
+		<div class="container">			
+			<a href="#" class="brand-logo">Responsiv<span class="black-text normal">r</span></a>
+			<ul class="right">
+				<li><a href="#">Getting started</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Components</a></li>
+				<li><a href="#">Javascript</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
 		<div class="row">
-			<div class="col s12 white">
-				<h3 class="thin">Buttons</h3>
+			<div class="col hide-on-phone tablet-4 right grey-100">
+				<div class="row">
+					<div class="col phone-12">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col phone-12 tablet-8">
+				<h3>Buttons</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<a class="btn ripple">Button</a>
 				<a class="btn-large ripple">Large</a>
 				<a class="btn-round ripple">Round</a>
 				<a class="btn-round-large ripple">Large round</a>
 				<a class="btn-flat ripple">Flat</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s12 white">
-				<h3 class="thin">Forms</h3>
+				<h3>Forms</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-		</div>
-		<div class="row">					
-			<div class="col s12 white">
+
 				<h4>Input fields</h4>
-				<div class="input-group col s12 m6">
+				<div class="input-group col phone-12 tablet-6">
 					<input type="text" name="text">
 					<label for="text">Label</label>
 				</div>
 
-				<div class="input-group col s12 m6">
+				<div class="input-group col phone-12 tablet-6">
 					<input type="text" name="text" placeholder="Placeholder">
 					<label for="text">Label</label>
 				</div>
 
-				<div class="input-group col s12 m6">
+				<div class="input-group col phone-12 tablet-6">
 					<input type="password" name="password">
 					<label for="password">Password</label>
 				</div>
 
-				<div class="input-group col s12 m6">
+				<div class="input-group col phone-12 tablet-6">
 					<input type="text" name="text" disabled>
 					<label for="text">Disabled</label>
 				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col s12 white">
+
+
 				<h4>Textarea</h4>
-				<div class="input-group col s12">
+				<div class="input-group col phone-12">
 					<textarea id="textarea"></textarea>
 					<label for="textarea">Textarea</label>
 				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col s12 white">
 				<h4>Select</h4>
-				<div class="input-group col s12 m6">
+				<div class="input-group col phone-12 tablet-6">
 					<select>
 						<option selected>Select an option</option>
 						<option value="">Audi</option>
@@ -87,7 +91,7 @@
 					<label>Select</label>
 				</div>
 
-				<div class="input-group col s12 m6">
+				<div class="input-group col phone-12 tablet-6">
 					<select disabled>
 						<option selected>Select an option</option>
 						<option value="">Audi</option>
@@ -97,13 +101,11 @@
 					</select>
 					<label>Select disabled</label>
 				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col s12 white">
+
+
 				<h4>Radio buttons</h4>
-				<div class="input-group col s12">
+				<div class="input-group col phone-12">
 					<input type="radio" id="2" name="group1">
 					<label for="2">
 						Radio button
@@ -124,13 +126,11 @@
 						Disabled and checked
 					</label>
 				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col s12 white">
+
+
 				<h4>Checkboxes</h4>
-				<div class="input-group col s12">
+				<div class="input-group col phone-12">
 					<input type="checkbox" id="checkbox1" name="group3">
 					<label for="checkbox1">
 						Checkbox
@@ -151,11 +151,9 @@
 						Disabled and checked
 					</label>
 				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col s12 white">
+
+
 				<h4>Icons</h4>
 				<p>
 					<i class="material-icons tiny">settings</i>
@@ -177,6 +175,7 @@
 					<i class="fa fa-cog fa-4x" aria-hidden="true"></i>
 				</p>
 				Large
+
 			</div>
 		</div>
 	</div>

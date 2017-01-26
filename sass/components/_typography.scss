@@ -1,20 +1,20 @@
 html {
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    color: $text-color;
-    line-height: 1.5;
+	font-family: 'Open Sans';
+	font-weight: normal;
+	color: $text-color;
+	line-height: 1.5;
 
-    @media only screen and (min-width: 0) {
-        font-size: 14px;
-    }
+	@media only screen and (min-width: 0) {
+		font-size: 14px;
+	}
 
-    @media only screen and (min-width: $medium-screen) {
-        font-size: 14.5px;
-    }
+	@media only screen and (min-width: $tablet-screen) {
+		font-size: 14.5px;
+	}
 
-    @media only screen and (min-width: $large-screen) {
-        font-size: 15px;
-    }
+	@media only screen and (min-width: $desktop-screen) {
+		font-size: 15px;
+	}
 }
 
 h1 { font-weight: 400; font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2) 0;}
@@ -24,9 +24,9 @@ h4 { font-weight: 400; font-size: $h4-fontsize; line-height: 110%; margin: ($h4-
 h5 { font-weight: 400; font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2) 0;}
 h6 { font-weight: 400; font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2) 0;}
 
-.thin { font-weight: 200; }
 .light { font-weight: 300; }
-.normal { font-weight: 400; }
-.bold { font-weight: 500; }
+.normal { font-weight: normal; }
 .bold { font-weight: 600; }
+.bolder { font-weight: bold; }
+.boldest { font-weight: 800; }
 .italic { font-style: italic; }
