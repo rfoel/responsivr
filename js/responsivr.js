@@ -1,4 +1,5 @@
 $('.toggle').on('click', function () {
-	console.log($(this).data('activates'));
-	var nav = $(this);
-})
+	var nav = '#'+$(this).data('activates');
+	$(nav).toggleClass('visible');
+	$(this).toggleClass('active');
+});	

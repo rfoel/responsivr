@@ -2989,9 +2989,13 @@ i {
   .navbar .toggle {
     color: #ffffff;
     height: 50px;
-    padding: 0 12.5px; }
+    padding: 0 12.5px;
+    transition: all 0.25s ease-in-out; }
     .navbar .toggle i {
       line-height: 50px; }
+    .navbar .toggle.active {
+      padding: 0;
+      margin-right: 300px; }
 
 .navbar-side {
   margin: 0;
@@ -2999,14 +3003,15 @@ i {
   height: 50px;
   line-height: 50px;
   background-color: #4dd0e1;
-  width: 300px;
+  width: 0;
   height: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
-  right: -300px; }
-  .navbar-side .visible {
-    right: 0; }
+  right: 0;
+  transition: width 0.25s ease-in-out; }
+  .navbar-side.visible {
+    width: 300px; }
   .navbar-side ul {
     list-style-type: none;
     margin: 0;
@@ -3020,21 +3025,6 @@ i {
       text-decoration: none;
       position: relative;
       letter-spacing: 0.1rem; }
-      .navbar-side ul li a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #fff176;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0); }
-      .navbar-side ul li a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1); }
       .navbar-side ul li a:hover {
         background: #fff176; }
 
