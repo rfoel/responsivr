@@ -42,66 +42,79 @@
 
 	<div class="container white">
 		<div class="row">
-			<div class="col hide-on-phone-only tablet-4 right grey-100">
+			<div class="col hide-on-phone-only tablet-4 desktop-3 right sticky">
 				<div class="row">
 					<div class="col phone-12">
-						
+						<ul class="list">
+							<li><a href="#buttons">Buttons</a></li>
+							<li><a href="#input">Input fields</a></li>
+							<li><a href="#textarea">Textarea</a></li>
+							<li><a href="#select">Select</a></li>
+							<li><a href="#radio">Radio buttons</a></li>
+							<li><a href="#checkbox">Checkboxes</a></li>
+							<li><a href="#icons">Icons</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col phone-12 tablet-8">
-				<h3>Buttons</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="btn ripple">Button</a>
-				<a class="btn-large ripple">Large</a>
-				<a class="btn-round ripple">Round</a>
-				<a class="btn-round-large ripple">Large round</a>
-				<a class="btn-flat ripple">Flat</a>
-				<a class="btn disabled">Disabled</a>
-				<a class="btn-large disabled">Disabled</a>
-				<a class="btn-round disabled">Disabled</a>
-				<a class="btn-round-large disabled">Disabled</a>
-				<a class="btn-flat disabled">Disabled</a>
+				<div id="buttons" class="scrollspy">					
+					<h3>Buttons</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a class="btn ripple">Button</a>
+					<a class="btn-large ripple">Large</a>
+					<a class="btn-flat ripple">Flat</a>
+					<a class="btn disabled">Disabled</a>
+					<a class="btn-large disabled">Disabled</a>
+					<a class="btn-flat disabled">Disabled</a>
+				</div>
+
 				<h3>Forms</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-				<h4>Input fields</h4>
-				<div class="input-group col phone-12 tablet-6">
-					<input type="text" id="text1">
-					<label for="text1">Label</label>
+				<div id="input" class="scrollspy">
+					<h4>Input fields</h4>
+					<div class="input-group col phone-12 tablet-6">
+						<input type="text" id="text1">
+						<label for="text1">Label</label>
+					</div>
+
+					<div class="input-group col phone-12 tablet-6">
+						<input type="text" id="text2" placeholder="Placeholder">
+						<label for="text2" class="active">Label</label>
+					</div>
+
+					<div class="input-group col phone-12 tablet-6">
+						<input type="password" id="password">
+						<label for="password">Password</label>
+					</div>
+
+					<div class="input-group col phone-12 tablet-6">
+						<input type="text" id="text" disabled>
+						<label for="text">Disabled</label>
+					</div>
 				</div>
 
-				<div class="input-group col phone-12 tablet-6">
-					<input type="text" id="text2" placeholder="Placeholder">
-					<label for="text2" class="active">Label</label>
+				<div id="textarea" class="scrollspy">					
+					<h4>Textarea</h4>
+					<div class="input-group col phone-12">
+						<textarea autoresize id="textarea"></textarea>
+						<label for="textarea">Textarea</label>
+					</div>
 				</div>
 
-				<div class="input-group col phone-12 tablet-6">
-					<input type="password" id="password">
-					<label for="password">Password</label>
-				</div>
-
-				<div class="input-group col phone-12 tablet-6">
-					<input type="text" id="text" disabled>
-					<label for="text">Disabled</label>
-				</div>
-
-				<h4>Textarea</h4>
-				<div class="input-group col phone-12">
-					<textarea id="textarea"></textarea>
-					<label for="textarea">Textarea</label>
-				</div>
-
-				<h4>Select</h4>
-				<div class="input-group col phone-12 tablet-6">
-					<select>
-						<option selected>Select an option</option>
-						<option value="">Audi</option>
-						<option value="">BMW</option>
-						<option value="">Mercedes</option>
-						<option value="">Volvo</option>
-					</select>
-					<label>Select</label>
+				<div id="select" class="scrollspy">					
+					<h4>Select</h4>
+					<div class="input-group col phone-12 tablet-6">
+						<select>
+							<option selected>Select an option</option>
+							<option value="">Audi</option>
+							<option value="">BMW</option>
+							<option value="">Mercedes</option>
+							<option value="">Volvo</option>
+						</select>
+						<label>Select</label>
+					</div>
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
@@ -115,83 +128,112 @@
 					<label>Select disabled</label>
 				</div>
 
-				<h4>Radio buttons</h4>
-				<div class="input-group col phone-12">
-					<input type="radio" id="2" name="group1">
-					<label for="2">
-						Radio button
-					</label>
+				<div id="radio" class="scrollspy">					
+					<h4>Radio buttons</h4>
+					<div class="input-group col phone-12">
+						<input type="radio" id="2" name="group1">
+						<label for="2">
+							Radio button
+						</label>
 
-					<input type="radio" id="3" name="group1" checked>
-					<label for="3">
-						Checked
-					</label>
+						<input type="radio" id="3" name="group1" checked>
+						<label for="3">
+							Checked
+						</label>
 
-					<input type="radio" id="4" name="group1" disabled>
-					<label for="4">
-						Disabled
-					</label>
+						<input type="radio" id="4" name="group1" disabled>
+						<label for="4">
+							Disabled
+						</label>
 
-					<input type="radio" id="5" name="group2" disabled checked>
-					<label for="5">
-						Disabled and checked
-					</label>
+						<input type="radio" id="5" name="group2" disabled checked>
+						<label for="5">
+							Disabled and checked
+						</label>
+					</div>
 				</div>
 
-				<h4>Checkboxes</h4>
-				<div class="input-group col phone-12">
-					<input type="checkbox" id="checkbox1" name="group3">
-					<label for="checkbox1">
-						Checkbox
-					</label>
+				<div id="checkbox" class="scrollspy">					
+					<h4>Checkboxes</h4>
+					<div class="input-group col phone-12">
+						<input type="checkbox" id="checkbox1" name="group3">
+						<label for="checkbox1">
+							Checkbox
+						</label>
 
-					<input type="checkbox" id="checkbox2" name="group3" checked>
-					<label for="checkbox2">
-						Checked
-					</label>
+						<input type="checkbox" id="checkbox2" name="group3" checked>
+						<label for="checkbox2">
+							Checked
+						</label>
 
-					<input type="checkbox" id="checkbox3" name="group3" disabled>
-					<label for="checkbox3">
-						Disabled
-					</label>
+						<input type="checkbox" id="checkbox3" name="group3" disabled>
+						<label for="checkbox3">
+							Disabled
+						</label>
 
-					<input type="checkbox" id="checkbox4" name="group3" disabled checked>
-					<label for="checkbox4">
-						Disabled and checked
-					</label>
+						<input type="checkbox" id="checkbox4" name="group3" disabled checked>
+						<label for="checkbox4">
+							Disabled and checked
+						</label>
+					</div>
 				</div>
 
-				<h4>Icons</h4>
-				<p>
-					<a href="https://material.io/icons/">Material Design Icons</a> and <a href="http://fontawesome.io/icons/">Font Awesome Icons</a> are available by default.
-				</p>
-				<p>
-					<i class="material-icons tiny">settings</i>
-					<i class="fa fa-cog" aria-hidden="true"></i>
-				</p>
-				Tiny
-				<p>
-					<i class="material-icons small">settings</i>
-					<i class="fa fa-cog fa-2x" aria-hidden="true"></i>
-				</p>
-				Small
-				<p>
-					<i class="material-icons medium">settings</i>
-					<i class="fa fa-cog fa-3x" aria-hidden="true"></i>
-				</p>
-				Medium
-				<p>
-					<i class="material-icons large">settings</i>
-					<i class="fa fa-cog fa-4x" aria-hidden="true"></i>
-				</p>
-				Large
-
+				<div id="icons" class="scrollspy">					
+					<h4>Icons</h4>
+					<p>
+						<a href="https://material.io/icons/">Material Design Icons</a> and <a href="http://fontawesome.io/icons/">Font Awesome Icons</a> are available by default.
+					</p>
+					<p>
+						<i class="material-icons tiny">settings</i>
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</p>
+					Tiny
+					<p>
+						<i class="material-icons small">settings</i>
+						<i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+					</p>
+					Small
+					<p>
+						<i class="material-icons medium">settings</i>
+						<i class="fa fa-cog fa-3x" aria-hidden="true"></i>
+					</p>
+					Medium
+					<p>
+						<i class="material-icons large">settings</i>
+						<i class="fa fa-cog fa-4x" aria-hidden="true"></i>
+					</p>
+					Large
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/responsivr.js"></script>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col phone-12 desktop-4">
+					<h5 class="white-text">Responsivr</h5>
+					<p class="grey-text-200">Yet another framework CSS.</p>
+				</div>
+				<div class="col phone-12 desktop-4 offset-desktop-2">
+					<h5 class="white-text">Links</h5>
+					<ul class="inline">
+						<li><a class="grey-text-200" href="https://github.com/rfoel"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+						<li><a class="grey-text-200" href="https://gitlab.com/u/rfoel"><i class="fa fa-gitlab fa-2x" aria-hidden="true"></i></a></li>
+						<li><a class="grey-text-200" href="https://www.linkedin.com/in/rafaelfr"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				© 2017 Developed by <a href="http://1e3.io">Rafael Franco</a>
+			</div>
+		</div>
+	</footer>
 
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/responsivr.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
 </body>
 </html>

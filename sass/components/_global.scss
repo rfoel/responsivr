@@ -1,212 +1,253 @@
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 a {
-    color: $link-color;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
+	color: $link-color;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .divider {
-    height: 1px;
-    overflow: hidden;
-    background-color: color("grey", "lighten-2");
+	height: 1px;
+	overflow: hidden;
+	background-color: color("grey", "lighten-2");
 }
 
 .hide-on-phone-only, .hide-on-phone-and-down {
-    @media #{$phone-and-down} {
-        display: none !important;
-    }
+	@media #{$phone-and-down} {
+		display: none !important;
+	}
 }
 .hide-on-tablet-and-down {
-    @media #{$tablet-and-down} {
-        display: none !important;
-    }
+	@media #{$tablet-and-down} {
+		display: none !important;
+	}
 }
 .hide-on-tablet-and-up {
-    @media #{$tablet-and-up} {
-        display: none !important;
-    }
+	@media #{$tablet-and-up} {
+		display: none !important;
+	}
 }
 .hide-on-tablet-only {
-    @media only screen and (min-width: $phone-screen) and (max-width: $tablet-screen) {
-        display: none !important;
-    }
+	@media only screen and (min-width: $phone-screen) and (max-width: $tablet-screen) {
+		display: none !important;
+	}
 }
 .hide-on-desktop-only {
-    @media #{$desktop-and-up} {
-        display: none !important;
-    }
+	@media #{$desktop-and-up} {
+		display: none !important;
+	}
 }
 .display-on-desktop {
-    @media #{$desktop-and-up} {
-        display: block !important;
-    }
+	@media #{$desktop-and-up} {
+		display: block !important;
+	}
 }
 .display-on-tablet {
-    @media only screen and (min-width: $phone-screen) and (max-width: $tablet-screen) {
-        display: block !important;
-    }
+	@media only screen and (min-width: $phone-screen) and (max-width: $tablet-screen) {
+		display: block !important;
+	}
 }
 .display-on-phone {
-    @media #{$phone-and-down} {
-        display: block !important;
-    }
+	@media #{$phone-and-down} {
+		display: block !important;
+	}
 }
 .display-on-tablet-and-up {
-    @media #{$tablet-and-up} {
-        display: block !important;
-    }
+	@media #{$tablet-and-up} {
+		display: block !important;
+	}
 }
 .display-on-tablet-and-down {
-    @media #{$tablet-and-down} {
-        display: block !important;
-    }
+	@media #{$tablet-and-down} {
+		display: block !important;
+	}
 }
 
 .center-on-phone-only {
-    @media #{$phone-and-down} {
-        text-align: center;
-    }
+	@media #{$phone-and-down} {
+		text-align: center;
+	}
 }
 
 .hide {
-    display: none !important;
+	display: none !important;
 }
 
 .left-align {
-    text-align: left;
+	text-align: left;
 }
 .right-align {
-    text-align: right
+	text-align: right
 }
 .center, .center-align {
-    text-align: center;
+	text-align: center;
 }
 
 .left {
-    float: left !important;
+	float: left !important;
 }
 
 .right {
-    float: right !important;
+	float: right !important;
 }
 
 .no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .circle {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .truncate {
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .no-padding {
-    padding: 0 !important;
+	padding: 0 !important;
 }
 
 input[type=radio],
 input[type=checkbox] {
-    position: absolute;
-    display: none;
+	position: absolute;
+	display: none;
 }
 
 input[type=radio] + label,
 input[type=checkbox] + label {
-    position: relative;
-    display: inline-block;
-    padding: 10px 30px 10px 30px;
-    cursor: pointer;
-    vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px 10px 30px;
+	cursor: pointer;
+	vertical-align: middle;
 
-    &:before {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        display: inline-block;
-        width: $checkbox-size;
-        height: $checkbox-size;
-        content: '';
-        border: 2px solid $default-color;
-    }
-    &:after {
-        position: absolute;
-        display: none;
-        content: '';
-    }
+	&:before {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		display: inline-block;
+		width: $checkbox-size;
+		height: $checkbox-size;
+		content: '';
+		border: 2px solid $default-color;
+	}
+	&:after {
+		position: absolute;
+		display: none;
+		content: '';
+	}
 }
 
 input[type=radio][disabled] + label,
 input[type=checkbox][disabled] + label {
-    color: $disabled-color;
+	color: $disabled-color;
 
-    &:hover {
-        &:before {
-            border: 2px solid $disabled-color;
-            animation-name: none;
-        }
-    }
-    &:before {
-        border-color: $disabled-color;
-    }
+	&:hover {
+		&:before {
+			border: 2px solid $disabled-color;
+			animation-name: none;
+		}
+	}
+	&:before {
+		border-color: $disabled-color;
+	}
 }
 
 input[type=radio]:checked + label,
 input[type=checkbox]:checked + label {
-    &:before {
-        animation-name: none;
-    }
-    &:after {
-        display: block;
-    }
+	&:before {
+		animation-name: none;
+	}
+	&:after {
+		display: block;
+	}
 }
 
 .ripple {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    transform: scale(10,10);
-    opacity: 0;
-    transition: transform .5s, opacity 1s;
-  }
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		transform: scale(10,10);
+		opacity: 0;
+		transition: transform .5s, opacity 1s;
+	}
 
-  &:active:after {
-    transform: scale(0,0);
-    opacity: .2;
-    transition: 0s;
-  }
+	&:active:after {
+		transform: scale(0,0);
+		opacity: .2;
+		transition: 0s;
+	}
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -o-sticky;
+	position: -ms-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+footer {
+	background-color: $primary-color;
+	color: #fff;
+
+	.copyright {
+		overflow: hidden;
+		height: 50px;
+		line-height: 50px;
+		color: #fff;
+		background-color: darken($primary-color, 5%);
+	}
+}
+
+ul {
+	&:not(.browser-default) {
+		padding-left: 0;
+		list-style-type: none;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	&.inline {
+		li {
+			margin: 0 5px;
+			display: inline;
+		}
+	}
 }

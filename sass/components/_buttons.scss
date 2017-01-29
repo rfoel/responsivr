@@ -57,14 +57,3 @@
 		}
 	}
 }
-
-.btn-round {
-	@extend .btn;
-	border-radius: 18px;
-}
-
-.btn-round-large {
-	@extend .btn-large;
-	@extend .btn-round;
-	border-radius: 36px;
-}

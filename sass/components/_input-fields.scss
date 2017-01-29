@@ -27,7 +27,7 @@ textarea {
 
     &:focus {
         border-color: $secondary-color;
-        background: lighten($default-color, 78%);
+        background: lighten($default-color, 79%);
     }
 
     & + label {
@@ -67,10 +67,10 @@ textarea {
 }
 
 textarea {
-    overflow-y: visible;
-    min-height: 100px;
-    padding: 5px;
     resize: none;
+    box-sizing: border-box;
+    padding: 5px;
+    min-height: 65px;
 }
 
 ::-webkit-input-placeholder {
