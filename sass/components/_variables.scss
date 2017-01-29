@@ -1,7 +1,8 @@
-$primary-color: color("cyan", "300") !default;
-$secondary-color: color("yellow", "300") !default;
-$text-color: color("black", "500") !default;
-$default-color: color("grey", "500") !default;
+$primary-color: color("blue-grey", "900") !default;
+$secondary-color: color("green", "a400") !default;
+$text-color: color("blue-grey", "900") !default;
+$default-color: color("blue-grey", "900") !default;
+$disabled-color: color("grey", "400") !default;
 $success-color: color("green", "500") !default;
 $error-color: color("red", "500") !default;
 $link-color: color("blue", "500") !default;
@@ -11,7 +12,7 @@ $navbar-text-color: color("white", "500") !default;
 $navbar-height: 50px;
 
 $button-color: $secondary-color !default;
-$button-text-color: color("black", "500") !default;
+$button-text-color: color("blue-grey", "900") !default;
 
 $OpenSansPath: "../fonts" !default;
 $OpenSansVersion: "1.1.0" !default; 

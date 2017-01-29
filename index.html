@@ -13,15 +13,15 @@
 
 	<script src="https://use.fontawesome.com/6172352ab8.js"></script>
 </head>
-<body>
+<body class="blue-grey-50">
 	<div class="row center hide-on-tablet-and-down">
-		<div class="col phone-12 cyan-400">
-			<h1 class="white-text light">Responsiv<span class="black-text normal">r</span></h1>
+		<div class="col phone-12 green-a400">
+			<h1 class="white-text light">Responsiv<span class="blue-grey-text-900 normal">r</span></h1>
 		</div>
 	</div>
 	<nav class="navbar">
 		<div class="container">			
-			<a href="#" class="brand">Responsiv<span class="black-text normal">r</span></a>
+			<a href="#" class="brand">Responsiv<span class="green-text-a400 normal">r</span></a>
 			<a href="#" class="toggle right hide-on-desktop-only" data-activates="mobile-nav"><i class="material-icons small">menu</i></a>
 			<ul class="right hide-on-tablet-and-down">
 				<li><a href="#">Getting started</a></li>
@@ -40,7 +40,7 @@
 		</ul>
 	</nav>	
 
-	<div class="container">
+	<div class="container white">
 		<div class="row">
 			<div class="col hide-on-phone-only tablet-4 right grey-100">
 				<div class="row">
@@ -57,31 +57,34 @@
 				<a class="btn-round ripple">Round</a>
 				<a class="btn-round-large ripple">Large round</a>
 				<a class="btn-flat ripple">Flat</a>
+				<a class="btn disabled">Disabled</a>
+				<a class="btn-large disabled">Disabled</a>
+				<a class="btn-round disabled">Disabled</a>
+				<a class="btn-round-large disabled">Disabled</a>
+				<a class="btn-flat disabled">Disabled</a>
 				<h3>Forms</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 				<h4>Input fields</h4>
 				<div class="input-group col phone-12 tablet-6">
-					<input type="text" name="text">
-					<label for="text">Label</label>
+					<input type="text" id="text1">
+					<label for="text1">Label</label>
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
-					<input type="text" name="text" placeholder="Placeholder">
-					<label for="text">Label</label>
+					<input type="text" id="text2" placeholder="Placeholder">
+					<label for="text2" class="active">Label</label>
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
-					<input type="password" name="password">
+					<input type="password" id="password">
 					<label for="password">Password</label>
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
-					<input type="text" name="text" disabled>
+					<input type="text" id="text" disabled>
 					<label for="text">Disabled</label>
 				</div>
-
-
 
 				<h4>Textarea</h4>
 				<div class="input-group col phone-12">
@@ -112,8 +115,6 @@
 					<label>Select disabled</label>
 				</div>
 
-
-
 				<h4>Radio buttons</h4>
 				<div class="input-group col phone-12">
 					<input type="radio" id="2" name="group1">
@@ -136,8 +137,6 @@
 						Disabled and checked
 					</label>
 				</div>
-
-
 
 				<h4>Checkboxes</h4>
 				<div class="input-group col phone-12">
@@ -162,9 +161,10 @@
 					</label>
 				</div>
 
-
-
 				<h4>Icons</h4>
+				<p>
+					<a href="https://material.io/icons/">Material Design Icons</a> and <a href="http://fontawesome.io/icons/">Font Awesome Icons</a> are available by default.
+				</p>
 				<p>
 					<i class="material-icons tiny">settings</i>
 					<i class="fa fa-cog" aria-hidden="true"></i>

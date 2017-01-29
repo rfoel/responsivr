@@ -20,9 +20,9 @@ input[type=radio]:checked + label {
 
 input[type=radio]:checked[disabled] + label {
   &:before {
-    border: 2px solid lighten($default-color, 20%);
+    border: 2px solid $disabled-color;
   }
   &:after {
-    background: lighten($default-color, 20%);
+    background: $disabled-color;
   }
 }

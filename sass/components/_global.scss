@@ -136,8 +136,8 @@ input[type=checkbox] {
 input[type=radio] + label,
 input[type=checkbox] + label {
     position: relative;
-    display: block;
-    padding: 10px 0 10px 30px;
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
     cursor: pointer;
     vertical-align: middle;
 
@@ -160,16 +160,16 @@ input[type=checkbox] + label {
 
 input[type=radio][disabled] + label,
 input[type=checkbox][disabled] + label {
-    color: lighten($default-color, 20%);
+    color: $disabled-color;
 
     &:hover {
         &:before {
-            border: 2px solid lighten($default-color, 20%);
+            border: 2px solid $disabled-color;
             animation-name: none;
         }
     }
     &:before {
-        border-color: lighten($default-color, 20%);
+        border-color: $disabled-color;
     }
 }
 
