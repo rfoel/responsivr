@@ -2677,7 +2677,7 @@ h6 {
   display: inline-block;
   height: 36px;
   line-height: 36px;
-  padding: 0 16px;
+  padding: 0 18px;
   margin: 12px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -2705,10 +2705,22 @@ h6 {
   background: #00E676;
   color: #263238;
   border-bottom: 3px solid #00b35c; }
+  .btn.outline, .outline.btn-large {
+    color: #00E676;
+    background: transparent;
+    border: 3px solid #00E676;
+    line-height: 30px; }
+    .btn.outline:hover, .outline.btn-large:hover, .btn.outline:focus, .outline.btn-large:focus {
+      background-color: rgba(0, 0, 0, 0.02); }
+      .btn.outline:hover:active, .outline.btn-large:hover:active, .btn.outline:focus:active, .outline.btn-large:focus:active {
+        border: 3px solid #00cd69;
+        background-color: rgba(0, 0, 0, 0.02); }
 
 .btn-large {
   height: 48px;
   line-height: 48px; }
+  .btn-large.outline {
+    line-height: 44px; }
 
 .btn-flat {
   color: #263238; }

@@ -2,7 +2,7 @@
 	display: inline-block;
 	height: 36px;
 	line-height: 36px;
-	padding: 0 16px;
+	padding: 0 18px;
 	margin: 12px;
 	text-transform: uppercase;
 	vertical-align: middle;
@@ -37,12 +37,32 @@
 	background: $button-color;
 	color: $button-text-color;
 	border-bottom: 3px solid darken($button-color, 10%);
+
+	&.outline {
+		color: $button-color;
+		background: transparent;
+		border: 3px solid $button-color;
+		line-height: 30px;
+
+		&:hover, &:focus {
+			background-color: rgba(0,0,0,.02);
+
+			&:active {
+				border: 3px solid darken($button-color, 5%);
+				background-color: rgba(0,0,0,.02);
+			}
+		}
+	}
 }
 
 .btn-large {
 	@extend .btn;
 	height: 48px;
 	line-height: 48px;
+
+	&.outline {
+		line-height: 44px;
+	}
 }
 
 .btn-flat {
