@@ -9,8 +9,9 @@
     <meta name="description" content="Yet another framework CSS.">
     <meta name="theme-color" content="#263238">
     <title>Components - Responsivr</title>
-    <link href="css/responsivr.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/responsivr.css" type="text/css" rel="stylesheet" media="screen,projection">
     <script src="https://use.fontawesome.com/6172352ab8.js"></script>
     <body class="blue-grey-50">
       <header>
@@ -38,8 +39,7 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <div class="container white">
+      <main><div class="container white">
 	<div class="row">
 		<div class="col hide-on-phone-only tablet-4 desktop-3 right sticky">
 			<div class="row">
@@ -63,11 +63,11 @@
 				<a class="btn ripple">Button</a>
 				<a class="btn-large ripple">Large</a>
 				<a class="btn-flat ripple">Flat</a>
+				<a class="btn outline ripple">Outline</a>
+				<a class="btn-large outline ripple">Outline</a>
 				<a class="btn disabled">Disabled</a>
 				<a class="btn-large disabled">Disabled</a>
 				<a class="btn-flat disabled">Disabled</a>
-				<a class="btn outline">Outline</a>
-				<a class="btn-large outline">Outline</a>
 			</div>
 
 			<h3>Forms</h3>
@@ -76,13 +76,13 @@
 			<div id="input" class="scrollspy">
 				<h4>Input fields</h4>
 				<div class="input-group col phone-12 tablet-6">
-					<input type="text" id="text1">
-					<label for="text1">Label</label>
+					<input type="text" id="first_name">
+					<label for="first_name">First name</label>
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
-					<input type="text" id="text2" placeholder="Placeholder">
-					<label for="text2" class="active">Label</label>
+					<input type="text" id="last_name" placeholder="Placeholder">
+					<label for="last_name" class="active">Last name</label>
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
@@ -91,9 +91,31 @@
 				</div>
 
 				<div class="input-group col phone-12 tablet-6">
-					<input type="text" id="text" disabled>
-					<label for="text">Disabled</label>
+					<input type="text" id="disabled" disabled>
+					<label for="disabled">Disabled</label>
 				</div>
+
+				<pre data-language="HTML"><code class="language-markup">
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;input type="text" id="first_name">
+		&lt;label for="first_name">First name&lt;/label>
+	&lt;/div>
+
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;input type="text" id="last_name" placeholder="Placeholder">
+		&lt;label for="last_name" class="active">Last name&lt;/label>
+	&lt;/div>
+
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;input type="password" id="password">
+		&lt;label for="password">Password&lt;/label>
+	&lt;/div>
+
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;input type="text" id="disabled" disabled>
+		&lt;label for="disabled">Disabled&lt;/label>
+	&lt;/div>
+				</code></pre>
 			</div>
 
 			<div id="textarea" class="scrollspy">					
@@ -102,6 +124,13 @@
 					<textarea autoresize id="textarea"></textarea>
 					<label for="textarea">Textarea</label>
 				</div>
+
+				<pre data-language="HTML"><code class="language-markup">
+	&lt;div class="input-group col phone-12">
+		&lt;textarea autoresize id="textarea">&lt;/textarea>
+		&lt;label for="textarea">Textarea&lt;/label>
+	&lt;/div>
+				</code></pre>
 			</div>
 
 			<div id="select" class="scrollspy">					
@@ -109,49 +138,92 @@
 				<div class="input-group col phone-12 tablet-6">
 					<select>
 						<option selected>Select an option</option>
-						<option value="">Audi</option>
-						<option value="">BMW</option>
-						<option value="">Mercedes</option>
-						<option value="">Volvo</option>
+						<option value="">Option 1</option>
+						<option value="">Option 2</option>
+						<option value="">Option 3</option>
 					</select>
 					<label>Select</label>
 				</div>
-			</div>
+				<div class="input-group col phone-12 tablet-6">
+					<select disabled>
+						<option selected>Select an option</option>
+						<option value="">Option 1</option>
+						<option value="">Option 2</option>
+						<option value="">Option 3</option>
+					</select>
+					<label>Select disabled</label>
+				</div>
 
-			<div class="input-group col phone-12 tablet-6">
-				<select disabled>
-					<option selected>Select an option</option>
-					<option value="">Audi</option>
-					<option value="">BMW</option>
-					<option value="">Mercedes</option>
-					<option value="">Volvo</option>
-				</select>
-				<label>Select disabled</label>
+				<pre data-language="HTML"><code class="language-markup">
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;select>
+			&lt;option selected>Select an option&lt;/option>
+			&lt;option value="">Option 1&lt;/option>
+			&lt;option value="">Option 2&lt;/option>
+			&lt;option value="">Option 3&lt;/option>
+		&lt;/select>
+		&lt;label>Select&lt;/label>
+	&lt;/div>
+
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;select disabled>
+			&lt;option selected>Select an option&lt;/option>
+			&lt;option value="">Option 1&lt;/option>
+			&lt;option value="">Option 2&lt;/option>
+			&lt;option value="">Option 3&lt;/option>
+		&lt;/select>
+		&lt;label>Select disabled&lt;/label>
+	&lt;/div>
+				</code></pre>
 			</div>
 
 			<div id="radio" class="scrollspy">					
 				<h4>Radio buttons</h4>
 				<div class="input-group col phone-12">
-					<input type="radio" id="2" name="group1">
-					<label for="2">
+					<input type="radio" id="radio1" name="group1">
+					<label for="radio1">
 						Radio button
 					</label>
 
-					<input type="radio" id="3" name="group1" checked>
-					<label for="3">
+					<input type="radio" id="radio2" name="group1" checked>
+					<label for="radio2">
 						Checked
 					</label>
 
-					<input type="radio" id="4" name="group1" disabled>
-					<label for="4">
+					<input type="radio" id="radio3" name="group1" disabled>
+					<label for="radio3">
 						Disabled
 					</label>
 
-					<input type="radio" id="5" name="group2" disabled checked>
-					<label for="5">
+					<input type="radio" id="radio4" name="group2" disabled checked>
+					<label for="radio4">
 						Disabled and checked
 					</label>
 				</div>
+
+				<pre data-language="HTML"><code class="language-markup">
+	&lt;div class="input-group col phone-12">
+		&lt;input type="radio" id="radio1" name="group1">
+		&lt;label for="radio1">
+			Radio button
+		&lt;/label>
+
+		&lt;input type="radio" id="radio2" name="group1" checked>
+		&lt;label for="radio2">
+			Checked
+		&lt;/label>
+
+		&lt;input type="radio" id="radio3" name="group1" disabled>
+		&lt;label for="radio3">
+			Disabled
+		&lt;/label>
+
+		&lt;input type="radio" id="radio4" name="group2" disabled checked>
+		&lt;label for="radio4">
+			Disabled and checked
+		&lt;/label>
+	&lt;/div>
+				</code></pre>
 			</div>
 
 			<div id="checkbox" class="scrollspy">					
@@ -177,6 +249,30 @@
 						Disabled and checked
 					</label>
 				</div>
+
+				<pre data-language="HTML"><code class="language-markup">
+	&lt;div class="input-group col phone-12">
+		&lt;input type="checkbox" id="checkbox1" name="group3">
+		&lt;label for="checkbox1">
+			Checkbox
+		&lt;/label>
+
+		&lt;input type="checkbox" id="checkbox2" name="group3" checked>
+		&lt;label for="checkbox2">
+			Checked
+		&lt;/label>
+
+		&lt;input type="checkbox" id="checkbox3" name="group3" disabled>
+		&lt;label for="checkbox3">
+			Disabled
+		&lt;/label>
+
+		&lt;input type="checkbox" id="checkbox4" name="group3" disabled checked>
+		&lt;label for="checkbox4">
+			Disabled and checked
+		&lt;/label>
+	&lt;/div>
+				</code></pre>
 			</div>
 
 			<div id="icons" class="scrollspy">					
@@ -207,7 +303,8 @@
 			</div>
 		</div>
 	</div>
-</div><footer>
+</div>
+      </main><footer>
 	<div class="container">
 		<div class="row">
 			<div class="col phone-12 desktop-4">
@@ -230,9 +327,9 @@
 		</div>
 	</div>
 </footer><script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/prism.js"></script>
 <script type="text/javascript" src="js/responsivr.min.js"></script>
 <script type="text/javascript" src="js/init.js"></script>
-      </main>
     </body>
   </head>
 </html>

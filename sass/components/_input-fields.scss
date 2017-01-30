@@ -27,7 +27,6 @@ textarea {
 
     &:focus {
         border-color: $secondary-color;
-        background: lighten($default-color, 79%);
     }
 
     & + label {

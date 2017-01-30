@@ -2510,6 +2510,16 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 a {
   color: #2196F3;
   text-decoration: none;
@@ -3663,7 +3673,6 @@ input[type=number]:focus,
 input[type=search]:focus,
 textarea:focus {
   border-color: #00e5ff;
-  background: #f7f9fa;
 }
 
 input:not([type]) + label,

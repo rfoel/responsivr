@@ -104,8 +104,8 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('release',['pug', 'sass:expanded','sass:min']);
 
-	grunt.registerTask('sass_compile', ['notify:sass_compile']);
-	grunt.registerTask('pug_compile', ['notify:pug_compile']);
-	grunt.registerTask('monitor', ["concurrent:monitor"]);
-	grunt.registerTask('default', ['release','watch']);
+	grunt.registerTask('sass_compile', ['sass', 'notify:sass_compile']);
+	grunt.registerTask('pug_compile', ['pug', 'notify:pug_compile']);
+	grunt.registerTask('monitor', ['concurrent:monitor']);
+	grunt.registerTask('default', ['watch']);
 };
