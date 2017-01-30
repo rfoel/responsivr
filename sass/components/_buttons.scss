@@ -42,7 +42,7 @@
 		color: $button-color;
 		background: transparent;
 		border: 2px solid $button-color;
-		line-height: 30px;
+		line-height: 32px;
 
 		&:hover, &:focus {
 			background-color: rgba(0,0,0,.02);
@@ -62,7 +62,7 @@
 	line-height: 48px;
 
 	&.outline {
-		line-height: 44px;
+		line-height: 46px;
 	}
 }
 

@@ -1,241 +1,70 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Responsivr - Yet another framework CSS</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport"/>
-	<meta content="Rafael Franco" name="author"/>
-	<meta content="Yet another framework CSS" name="description"/>
-	<meta name="theme-color" content="#00acc1" />
-
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/responsivr.css">
-
-	<script src="https://use.fontawesome.com/6172352ab8.js"></script>
-</head>
-<body class="blue-grey-50">
-	<div class="row center hide-on-tablet-and-down">
-		<div class="col phone-12 cyan-a400">
-			<h1 class="white-text light">Responsiv<span class="blue-grey-text-900 normal">r</span></h1>
-		</div>
-	</div>
-	<nav class="navbar">
-		<div class="container">			
-			<a href="#" class="brand">Responsiv<span class="cyan-text-a400 normal">r</span></a>
-			<a href="#" class="toggle right hide-on-desktop-only" data-activates="mobile-nav"><i class="material-icons small">menu</i></a>
-			<ul class="right hide-on-tablet-and-down">
-				<li><a href="#">Getting started</a></li>
-				<li><a href="#">CSS</a></li>
-				<li><a href="#">Components</a></li>
-				<li><a href="#">Javascript</a></li>
-			</ul>
-		</div>
-	</nav>
-	<nav class="navbar-side" id="mobile-nav">
-		<ul>
-			<li><a href="#">Getting started</a></li>
-			<li><a href="#">CSS</a></li>
-			<li><a href="#">Components</a></li>
-			<li><a href="#">Javascript</a></li>
-		</ul>
-	</nav>	
-
-	<div class="container white">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="author" content="Rafael Franco">
+    <meta name="description" content="Yet another framework CSS.">
+    <meta name="theme-color" content="#263238">
+    <title>Responsivr - Yet another framework CSS</title>
+    <link href="css/responsivr.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6172352ab8.js"></script>
+    <body class="blue-grey-50">
+      <header>
+        <div class="row center hide-on-tablet-and-down">
+          <div class="col phone-12 cyan-a400">
+            <h1 class="white-text light">Responsivr</h1>
+          </div>
+        </div>
+        <nav class="navbar">
+          <div class="container"><a class="brand" href="index.html">Responsivr</a><a class="toggle right hide-on-desktop-only" data-activates="mobile-nav"> <i class="material-icons small">menu</i></a>
+            <ul class="right hide-on-tablet-and-down">
+              <li><a href="/">Getting started</a></li>
+              <li><a href="/">CSS</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="/">JavaScript</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar-side" id="mobile-nav">
+          <ul>
+            <li><a href="/">Getting started</a></li>
+            <li><a href="/">CSS</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="/">JavaScript</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        Teste<footer>
+	<div class="container">
 		<div class="row">
-			<div class="col hide-on-phone-only tablet-4 desktop-3 right sticky">
-				<div class="row">
-					<div class="col phone-12">
-						<ul class="list">
-							<li><a href="#buttons">Buttons</a></li>
-							<li><a href="#input">Input fields</a></li>
-							<li><a href="#textarea">Textarea</a></li>
-							<li><a href="#select">Select</a></li>
-							<li><a href="#radio">Radio buttons</a></li>
-							<li><a href="#checkbox">Checkboxes</a></li>
-							<li><a href="#icons">Icons</a></li>
-						</ul>
-					</div>
-				</div>
+			<div class="col phone-12 desktop-4">
+				<h5 class="white-text">Responsivr</h5>
+				<p class="grey-text-200">Yet another framework CSS.</p>
 			</div>
-			<div class="col phone-12 tablet-8">
-				<div id="buttons" class="scrollspy">					
-					<h3>Buttons</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a class="btn ripple">Button</a>
-					<a class="btn-large ripple">Large</a>
-					<a class="btn-flat ripple">Flat</a>
-					<a class="btn disabled">Disabled</a>
-					<a class="btn-large disabled">Disabled</a>
-					<a class="btn-flat disabled">Disabled</a>
-					<a class="btn outline">Outline</a>
-					<a class="btn-large outline">Outline</a>
-				</div>
-
-				<h3>Forms</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-				<div id="input" class="scrollspy">
-					<h4>Input fields</h4>
-					<div class="input-group col phone-12 tablet-6">
-						<input type="text" id="text1">
-						<label for="text1">Label</label>
-					</div>
-
-					<div class="input-group col phone-12 tablet-6">
-						<input type="text" id="text2" placeholder="Placeholder">
-						<label for="text2" class="active">Label</label>
-					</div>
-
-					<div class="input-group col phone-12 tablet-6">
-						<input type="password" id="password">
-						<label for="password">Password</label>
-					</div>
-
-					<div class="input-group col phone-12 tablet-6">
-						<input type="text" id="text" disabled>
-						<label for="text">Disabled</label>
-					</div>
-				</div>
-
-				<div id="textarea" class="scrollspy">					
-					<h4>Textarea</h4>
-					<div class="input-group col phone-12">
-						<textarea autoresize id="textarea"></textarea>
-						<label for="textarea">Textarea</label>
-					</div>
-				</div>
-
-				<div id="select" class="scrollspy">					
-					<h4>Select</h4>
-					<div class="input-group col phone-12 tablet-6">
-						<select>
-							<option selected>Select an option</option>
-							<option value="">Audi</option>
-							<option value="">BMW</option>
-							<option value="">Mercedes</option>
-							<option value="">Volvo</option>
-						</select>
-						<label>Select</label>
-					</div>
-				</div>
-
-				<div class="input-group col phone-12 tablet-6">
-					<select disabled>
-						<option selected>Select an option</option>
-						<option value="">Audi</option>
-						<option value="">BMW</option>
-						<option value="">Mercedes</option>
-						<option value="">Volvo</option>
-					</select>
-					<label>Select disabled</label>
-				</div>
-
-				<div id="radio" class="scrollspy">					
-					<h4>Radio buttons</h4>
-					<div class="input-group col phone-12">
-						<input type="radio" id="2" name="group1">
-						<label for="2">
-							Radio button
-						</label>
-
-						<input type="radio" id="3" name="group1" checked>
-						<label for="3">
-							Checked
-						</label>
-
-						<input type="radio" id="4" name="group1" disabled>
-						<label for="4">
-							Disabled
-						</label>
-
-						<input type="radio" id="5" name="group2" disabled checked>
-						<label for="5">
-							Disabled and checked
-						</label>
-					</div>
-				</div>
-
-				<div id="checkbox" class="scrollspy">					
-					<h4>Checkboxes</h4>
-					<div class="input-group col phone-12">
-						<input type="checkbox" id="checkbox1" name="group3">
-						<label for="checkbox1">
-							Checkbox
-						</label>
-
-						<input type="checkbox" id="checkbox2" name="group3" checked>
-						<label for="checkbox2">
-							Checked
-						</label>
-
-						<input type="checkbox" id="checkbox3" name="group3" disabled>
-						<label for="checkbox3">
-							Disabled
-						</label>
-
-						<input type="checkbox" id="checkbox4" name="group3" disabled checked>
-						<label for="checkbox4">
-							Disabled and checked
-						</label>
-					</div>
-				</div>
-
-				<div id="icons" class="scrollspy">					
-					<h4>Icons</h4>
-					<p>
-						<a href="https://material.io/icons/">Material Design Icons</a> and <a href="http://fontawesome.io/icons/">Font Awesome Icons</a> are available by default.
-					</p>
-					<p>
-						<i class="material-icons tiny">settings</i>
-						<i class="fa fa-cog" aria-hidden="true"></i>
-					</p>
-					Tiny
-					<p>
-						<i class="material-icons small">settings</i>
-						<i class="fa fa-cog fa-2x" aria-hidden="true"></i>
-					</p>
-					Small
-					<p>
-						<i class="material-icons medium">settings</i>
-						<i class="fa fa-cog fa-3x" aria-hidden="true"></i>
-					</p>
-					Medium
-					<p>
-						<i class="material-icons large">settings</i>
-						<i class="fa fa-cog fa-4x" aria-hidden="true"></i>
-					</p>
-					Large
-				</div>
+			<div class="col phone-12 desktop-4 offset-desktop-2">
+				<h5 class="white-text">Links</h5>
+				<ul class="inline">
+					<li><a class="grey-text-200" href="https://github.com/rfoel"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+					<li><a class="grey-text-200" href="https://gitlab.com/u/rfoel"><i class="fa fa-gitlab fa-2x" aria-hidden="true"></i></a></li>
+					<li><a class="grey-text-200" href="https://www.linkedin.com/in/rafaelfr"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-
-	<footer>
+	<div class="copyright">
 		<div class="container">
-			<div class="row">
-				<div class="col phone-12 desktop-4">
-					<h5 class="white-text">Responsivr</h5>
-					<p class="grey-text-200">Yet another framework CSS.</p>
-				</div>
-				<div class="col phone-12 desktop-4 offset-desktop-2">
-					<h5 class="white-text">Links</h5>
-					<ul class="inline">
-						<li><a class="grey-text-200" href="https://github.com/rfoel"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-						<li><a class="grey-text-200" href="https://gitlab.com/u/rfoel"><i class="fa fa-gitlab fa-2x" aria-hidden="true"></i></a></li>
-						<li><a class="grey-text-200" href="https://www.linkedin.com/in/rafaelfr"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-			</div>
+			© 2017 Developed by <a href="http://1e3.io">Rafael Franco</a>
 		</div>
-		<div class="copyright">
-			<div class="container">
-				© 2017 Developed by <a href="http://1e3.io">Rafael Franco</a>
-			</div>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/responsivr.min.js"></script>
-	<script type="text/javascript" src="js/init.js"></script>
-</body>
+	</div>
+</footer><script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/responsivr.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+      </main>
+    </body>
+  </head>
 </html>

@@ -45,6 +45,12 @@
 			&:hover {
 				// color: $secondary-color;
 			}
+
+			&.active:before {
+				visibility: visible;
+				-webkit-transform: scaleX(1);
+				transform: scaleX(1);
+			}
 		}
 
 		&.left {
@@ -71,7 +77,6 @@
 		height: $navbar-height;
 		padding: 0 ($navbar-height / 4);
 		transition: all 0.25s ease-in-out;
-
 
 		i {
 			line-height: $navbar-height;
