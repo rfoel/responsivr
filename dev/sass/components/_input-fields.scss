@@ -16,7 +16,7 @@ textarea {
     border: 1px solid $default-color;
     border-radius: 0;
     outline: none;
-    height:30px;
+    height:34px;
     width: 100%;
     margin: 20px 0 5px 0;
     padding: 0 5px;
@@ -57,7 +57,7 @@ textarea {
     label {
         color: $default-color;
         position: absolute;
-        top: 0;
+        top: -5px;
         left: $gutter / 2;
         font-size: 0.9rem;
         cursor: text;

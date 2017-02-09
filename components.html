@@ -13,33 +13,34 @@
     <link href="./dist/css/responsivr.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="./dist/css/page.css" type="text/css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6172352ab8.js"></script>
-    <body class="blue-grey-50">
-      <header>
-        <div class="row center hide-on-tablet-and-down">
-          <div class="col phone-12 cyan-a400">
-            <h1 class="white-text light">Responsivr</h1>
-          </div>
+  </head>
+  <body class="blue-grey-50">
+    <header>
+      <div class="row center hide-on-tablet-and-down">
+        <div class="col phone-12 cyan-a400">
+          <h1 class="white-text light">Responsivr</h1>
         </div>
-        <nav class="navbar">
-          <div class="container"><a class="brand" href="index.html">Responsivr</a><a class="toggle right hide-on-desktop-only" data-activates="mobile-nav"> <i class="material-icons small">menu</i></a>
-            <ul class="right hide-on-tablet-and-down">
-              <li><a href="/">Getting started</a></li>
-              <li><a href="/">CSS</a></li>
-              <li><a class="active" href="components.html">Components</a></li>
-              <li><a href="/">JavaScript</a></li>
-            </ul>
-          </div>
-        </nav>
-        <nav class="navbar-side" id="mobile-nav">
-          <ul>
+      </div>
+      <nav class="navbar">
+        <div class="container"><a class="brand" href="index.html">Responsivr</a><a class="toggle right hide-on-desktop-only" data-activates="mobile-nav"> <i class="material-icons small">menu</i></a>
+          <ul class="right hide-on-tablet-and-down">
             <li><a href="/">Getting started</a></li>
             <li><a href="/">CSS</a></li>
             <li><a class="active" href="components.html">Components</a></li>
             <li><a href="/">JavaScript</a></li>
           </ul>
-        </nav>
-      </header>
-      <main><div class="container white">
+        </div>
+      </nav>
+      <nav class="navbar-side" id="mobile-nav">
+        <ul>
+          <li><a href="/">Getting started</a></li>
+          <li><a href="/">CSS</a></li>
+          <li><a class="active" href="components.html">Components</a></li>
+          <li><a href="/">JavaScript</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main><div class="container white">
 	<div class="row">
 		<div class="col hide-on-phone-only tablet-4 desktop-3 right sticky">
 			<div class="row">
@@ -60,11 +61,11 @@
 			<div id="buttons" class="scrollspy">					
 				<h3>Buttons</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="btn ripple">Button</a>
-				<a class="btn-large ripple">Large</a>
-				<a class="btn-flat ripple">Flat</a>
-				<a class="btn outline ripple">Outline</a>
-				<a class="btn-large outline ripple">Outline</a>
+				<a class="btn waves-effect">Button</a>
+				<a class="btn-large waves-effect">Large</a>
+				<a class="btn-flat waves-effect">Flat</a>
+				<a class="btn outline waves-effect">Outline</a>
+				<a class="btn-large outline waves-effect">Outline</a>
 				<a class="btn disabled">Disabled</a>
 				<a class="btn-large disabled">Disabled</a>
 				<a class="btn-flat disabled">Disabled</a>
@@ -136,8 +137,8 @@
 			<div id="select" class="scrollspy">					
 				<h4>Select</h4>
 				<div class="input-group col phone-12 tablet-6">
-					<select>
-						<option selected>Select an option</option>
+					<select id="select1">
+						<option selected disabled>Select an option</option>
 						<option value="">Option 1</option>
 						<option value="">Option 2</option>
 						<option value="">Option 3</option>
@@ -145,13 +146,36 @@
 					<label>Select</label>
 				</div>
 				<div class="input-group col phone-12 tablet-6">
-					<select disabled>
-						<option selected>Select an option</option>
+					<select id="select2" disabled>
+						<option selected disabled>Select an option</option>
 						<option value="">Option 1</option>
 						<option value="">Option 2</option>
 						<option value="">Option 3</option>
 					</select>
 					<label>Select disabled</label>
+				</div>
+				<div class="input-group col phone-12 tablet-6">
+					<select id="select3">
+						<option selected disabled>Select an option</option>
+						<optgroup label="Group 1">
+							<option value="">Option 1</option>
+							<option value="">Option 2</option>
+						</optgroup>
+						<optgroup label="Group 2">
+							<option value="">Option 3</option>
+							<option value="" selected>Option 4</option>
+						</optgroup>
+					</select>
+					<label>Select with groups</label>
+				</div>
+				<div class="input-group col phone-12 tablet-6">
+					<select id="select4" multiple>
+						<option value="">Option 1</option>
+						<option value="">Option 2</option>
+						<option value="">Option 3</option>
+						<option value="">Option 4</option>
+					</select>
+					<label>Select multiple</label>
 				</div>
 
 				<pre data-language="HTML"><code class="language-markup">
@@ -173,6 +197,31 @@
 			&lt;option value="">Option 3&lt;/option>
 		&lt;/select>
 		&lt;label>Select disabled&lt;/label>
+	&lt;/div>
+
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;select id="select3">
+			&lt;option selected disabled>Select an option&lt;/option>
+			&lt;optgroup label="Group 1">
+				&lt;option value="">Option 1&lt;/option>
+				&lt;option value="">Option 2&lt;/option>
+			&lt;/optgroup>
+			&lt;optgroup label="Group 2">
+				&lt;option value="">Option 3&lt;/option>
+				&lt;option value="" selected>Option 4&lt;/option>
+			&lt;/optgroup>
+		&lt;/select>
+		&lt;label>Select with groups&lt;/label>
+	&lt;/div>
+
+	&lt;div class="input-group col phone-12 tablet-6">
+		&lt;select id="select4" multiple>
+			&lt;option value="">Option 1&lt;/option>
+			&lt;option value="">Option 2&lt;/option>
+			&lt;option value="">Option 3&lt;/option>
+			&lt;option value="">Option 4&lt;/option>
+		&lt;/select>
+		&lt;label>Select multiple&lt;/label>
 	&lt;/div>
 				</code></pre>
 			</div>
@@ -304,7 +353,7 @@
 		</div>
 	</div>
 </div>
-      </main><footer>
+    </main><footer>
 	<div class="container">
 		<div class="row">
 			<div class="col phone-12 desktop-4">
@@ -327,9 +376,8 @@
 		</div>
 	</div>
 </footer>
-      <script src="./dist/js/lib.js"></script>
-      <script src="./dist/js/responsivr.js"></script>
-      <script src="./dist/js/init.js"></script>
-    </body>
-  </head>
+    <script src="./dist/js/lib.js"></script>
+    <script src="./dist/js/responsivr.js"></script>
+    <script src="./dist/js/init.js"></script>
+  </body>
 </html>

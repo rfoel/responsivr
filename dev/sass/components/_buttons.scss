@@ -16,12 +16,11 @@
 	-webkit-tap-highlight-color: transparent;
 
 	&:hover, &:focus {
-		background-color: darken($button-color, 5%);
+		background-color: lighten($button-color, 10%);
 		color: $button-text-color;
 
 		&:active {
-			border-top: 3px solid darken($button-color, 10%);
-			border-bottom: 0;
+			background-color: darken($button-color, 2%);
 		}
 	}
 
@@ -29,28 +28,27 @@
 		pointer-events: none;
 		color: $disabled-color;
 		background: lighten($disabled-color, 15%);
-		border-bottom-color: $disabled-color;
 	}
 }
 
 .btn {
 	background: $button-color;
 	color: $button-text-color;
-	border-bottom: 3px solid darken($button-color, 10%);
 
 	&.outline {
 		color: $button-color;
 		background: transparent;
-		border: 2px solid $button-color;
+		border: 1px solid $button-color;
 		line-height: 32px;
 
 		&:hover, &:focus {
-			background-color: rgba(0,0,0,.02);
+			background-color: $button-color;
+			color: $button-text-color;
 
 			&:active {
-				border: 2px solid darken($button-color, 5%);
-				color: darken($button-color, 5%);
-				background-color: rgba(0,0,0,.02);
+				border-color: darken($button-color, 2%);
+				color: rgba(0,0,0,.8);
+				background-color: darken($button-color, 2%);
 			}
 		}
 	}

@@ -12,6 +12,7 @@ gulp.task('default', ['sass', 'js', 'images']);
 gulp.task('watch', function() {
 	gulp.watch('./dev/sass/**/*', ['sass']);
 	gulp.watch('./dev/js/**/*', ['js']);
+	gulp.watch('./dev/views/**/*', ['views']);
 });
 
 gulp.task('fonts', function() {
@@ -36,7 +37,7 @@ gulp.task('views', function buildHTML() {
 });
 
 gulp.task('jslib', function() {
-	return gulp.src(['./node_modules/jquery/dist/jquery.js', './dev/js/scrollspy.js'])
+	return gulp.src(['./node_modules/jquery/dist/jquery.js', './dev/js/prism.js'])
 	.pipe(concat('lib.js'))
 	// .pipe(uglify())
 	// .pipe(rename({suffix: '.min'}))
@@ -52,7 +53,12 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-	return gulp.src(['./dev/js/responsivr.js'])
+	return gulp.src([
+		'./dev/js/scrollspy.js', 
+		'./dev/js/waves.js',
+		'./dev/js/selecty.js',
+		'./dev/js/responsivr.js'
+		])
 	.pipe(concat('responsivr.js'))
 	// .pipe(uglify())
 	// .pipe(rename({suffix: '.min'}))

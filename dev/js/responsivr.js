@@ -11,3 +11,10 @@ jQuery.each(jQuery('textarea[autoresize]'), function() {
 	};
 	jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('autoresize');
 });
+
+$('.scrollspy').scrollSpy();
+
+$('#select1').selecty();
+$('#select2').selecty();
+$('#select3').selecty();
+$('#select4').selecty();
