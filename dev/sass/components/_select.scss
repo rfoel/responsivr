@@ -8,7 +8,6 @@ $selecty-triangle-x: 10px !default;
 $dropdown-padding: 10px !default;
 $dropdown-item-padding: 0 10px !default;
 $dropdown-item-height: $selecty-height !default;
-$dropdown-item-hover-bg: rgba(0, 0, 0, 0.1) !default;
 
 @mixin text-ellipsis() {
 	overflow: hidden;

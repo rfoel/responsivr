@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#263238">
     <title>Components - Responsivr</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./dist/css/responsivr.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="./dist/css/page.css" type="text/css" rel="stylesheet">
+    <link href="css/responsivr.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/page.min.css" type="text/css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6172352ab8.js"></script>
   </head>
   <body class="blue-grey-50">
@@ -31,7 +31,7 @@
           </ul>
         </div>
       </nav>
-      <nav class="navbar-side" id="mobile-nav">
+      <nav class="navbar-side" id="mobile-nav"><a class="toggle right" data-activates="mobile-nav"> <i class="material-icons small">close</i></a>
         <ul>
           <li><a href="/">Getting started</a></li>
           <li><a href="/">CSS</a></li>
@@ -61,7 +61,7 @@
 			<div id="buttons" class="scrollspy">					
 				<h3>Buttons</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="btn waves-effect">Button</a>
+				<a class="btn">Button</a>
 				<a class="btn-large waves-effect">Large</a>
 				<a class="btn-flat waves-effect">Flat</a>
 				<a class="btn outline waves-effect">Outline</a>
@@ -376,8 +376,8 @@
 		</div>
 	</div>
 </footer>
-    <script src="./dist/js/lib.js"></script>
-    <script src="./dist/js/responsivr.js"></script>
-    <script src="./dist/js/init.js"></script>
+    <script src="js/lib.min.js"></script>
+    <script src="js/responsivr.min.js"></script>
+    <script src="js/init.min.js"></script>
   </body>
 </html>

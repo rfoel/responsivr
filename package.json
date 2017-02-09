@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/rfoel/responsivr#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.7",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.1.1",
@@ -30,6 +31,7 @@
     "gulp-ruby-sass": "^2.1.1",
     "gulp-uglify": "^2.0.1",
     "gulp-uglifycss": "^1.0.6",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "jquery.easing": "^1.4.1"
   }
 }

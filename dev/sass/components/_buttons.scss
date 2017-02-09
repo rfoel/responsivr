@@ -68,11 +68,11 @@
 	color: $button-text-color;
 
 	&:hover, &:focus {
-		background-color: rgba(0,0,0,.05);
+		background-color: rgba(0,0,0,.03);
 
 		&:active {
 			border-top: 0;
-			background-color: rgba(0,0,0,.15);
+			background-color: rgba(0,0,0,.04);
 		}
 	}
 }

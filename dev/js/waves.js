@@ -187,14 +187,6 @@
             for (var i = 0, len = ripples.length; i < len; i++) {
                 removeRipple(e, element, ripples[i]);
             }
-
-            if (isTouchAvailable) {
-                element.removeEventListener('touchend', Effect.hide);
-                element.removeEventListener('touchcancel', Effect.hide);
-            }
-
-            element.removeEventListener('mouseup', Effect.hide);
-            element.removeEventListener('mouseleave', Effect.hide);
         }
     };
 
@@ -425,8 +417,6 @@
                         hidden = true;
                         Effect.hide(hideEvent, element);
                     }
-
-                    removeListeners();
                 };
 
                 var touchMove = function(moveEvent) {
@@ -435,19 +425,12 @@
                         timer = null;
                     }
                     hideEffect(moveEvent);
-
-                    removeListeners();
                 };
 
                 element.addEventListener('touchmove', touchMove, false);
                 element.addEventListener('touchend', hideEffect, false);
                 element.addEventListener('touchcancel', hideEffect, false);
 
-                var removeListeners = function() {
-                    element.removeEventListener('touchmove', touchMove);
-                    element.removeEventListener('touchend', hideEffect);
-                    element.removeEventListener('touchcancel', hideEffect);
-                };
             } else {
 
                 Effect.show(e, element);

@@ -6,8 +6,9 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var uglifycss = require('gulp-uglifycss');
 var imagemin = require('gulp-imagemin');
+var browserSync = require('browser-sync').create();
 
-gulp.task('default', ['sass', 'js', 'images']);
+gulp.task('default', ['sass', 'js', 'js-init', 'views', 'watch', 'server']);
 
 gulp.task('watch', function() {
 	gulp.watch('./dev/sass/**/*', ['sass']);
@@ -24,23 +25,23 @@ gulp.task('sass', function() {
 	sass('./dev/sass/responsivr.scss')
 	.on('error', sass.logError)
 	// .pipe(uglifycss())
-	// .pipe(rename({suffix: '.min'}))
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('views', function buildHTML() {
+gulp.task('views', function () {
 	return gulp.src('./dev/views/*.pug')
 	.pipe(pug({
 		pretty: true
 	}))
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('./pages/'));
 });
 
 gulp.task('jslib', function() {
 	return gulp.src(['./node_modules/jquery/dist/jquery.js', './dev/js/prism.js'])
 	.pipe(concat('lib.js'))
 	// .pipe(uglify())
-	// .pipe(rename({suffix: '.min'}))
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./dist/js/'));
 });
 
@@ -48,12 +49,13 @@ gulp.task('css', function() {
 	return gulp.src(['./dev/css/*'])
 	.pipe(concat('page.css'))
 	// .pipe(uglify())
-	// .pipe(rename({suffix: '.min'}))
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('js', function() {
 	return gulp.src([
+		'./node_modules/jquery.easing/jquery.easing.js',
 		'./dev/js/scrollspy.js', 
 		'./dev/js/waves.js',
 		'./dev/js/selecty.js',
@@ -61,7 +63,16 @@ gulp.task('js', function() {
 		])
 	.pipe(concat('responsivr.js'))
 	// .pipe(uglify())
-	// .pipe(rename({suffix: '.min'}))
+	.pipe(rename({suffix: '.min'}))
+	.pipe(gulp.dest('./dist/js/'));
+});
+
+gulp.task('js-init', function() {
+	return gulp.src([
+		'./dev/js/init.js', 
+		])
+	// .pipe(uglify())
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./dist/js/'));
 });
 
@@ -69,4 +80,14 @@ gulp.task('images', function() {
 	gulp.src('./dev/images/*')
 	.pipe(imagemin())
 	.pipe(gulp.dest('./dist/images/'));
+});
+
+gulp.task('server', function() {
+  browserSync.init({
+    files: ['./dist/**','./*.html'],
+    port: '8888',
+    server: {
+      baseDir: ['dist', 'pages']
+    }
+  })
 });

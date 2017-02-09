@@ -81,11 +81,6 @@
 		i {
 			line-height: $navbar-height;
 		}
-
-		&.active {
-			padding: 0;
-			margin-right: 300px;
-		}
 	}
 }
 
@@ -98,19 +93,43 @@
 	width: 0;
 	height: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 99;
 	top: 0;
 	right: 0;
 	transition: width 0.25s ease-in-out;
 
+	.toggle {
+		color: $navbar-text-color;
+		height: $navbar-height;
+		padding: 0 ($navbar-height / 4) ;
+		transition: all 0.25s ease-in-out;
+		visibility: hidden;
+
+		i {
+			line-height: $navbar-height;
+		}
+	}
+
 	&.visible {
 		width: 300px;
+
+		& > .toggle {
+			visibility: visible;
+		}
+
+		@media #{$phone-and-down} {
+			& {
+				width: 100%;
+			}
+		}
 	}
+
 
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+		margin-top: $navbar-height;
 		overflow: hidden;
 
 		li a {
