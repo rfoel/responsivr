@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A minimal css framework.">
+  <meta name="author" content="Rafael Franco">
+
+  <title>responsivr</title>
+
+  <link rel="stylesheet" type="text/css" href="./dist/responsivr.css" />
+  <link rel="stylesheet" type="text/css" href="./fonts/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="nav horizontal-align">
+    <div class="nav-item"><a href="#installation">Installation</a></div>
+    <div class="nav-item"><a href="#guide">Guide</a></div>
+    <div class="nav-item"><a href="https://github.com/rfoel/responsivr" target="_blank">Github</a></div>
+    <div class="nav-item">
+      <a class="github-button" href="https://github.com/rfoel/responsivr" data-size="large" data-show-count="true" aria-label="Star rfoel/responsivr on GitHub">Star</a>
+    </div>
+  </div>
+  <header class="container center">
+    <img src="./img/logo.svg" alt="Responsivr Logo" height="150">
+    <h3>responsivr</h3>
+    <h5>Yet another framework CSS.</h5>
+  </header>
+  <section id="features" class="container">
+    <h3 class="header">FEATURES</h3>
+    <div class="row">
+      <div class="col">
+        <h5 class="text-center">Intuitive</h5>
+        <p class="justify">All you have to do is drop Responsivr into your project, and everything will be styled automatically. There is a
+          minimal amount of classes to learn.</p>
+      </div>
+      <div class="col">
+        <h5 class="text-center">Lightweight</h5>
+        <p class="justify">Responsivr comes packed with features, including styling for most elements, a grid, and some components, all in just
+          <strong>5kb.</strong></p>
+      </div>
+      <div class="col">
+        <h5 class="text-center">Beautiful</h5>
+        <p class="justify">The styles that come with Responsivr are clean and modern, dropping it into your project will give you a headstart
+          in design.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="installation" class="container">
+    <h3>INSTALLATION</h3>
+    <p class="content">You can install Responsivr in multiple ways, but it's as simple as adding a single <code>link</code> tag to your project.</p>
+
+    <h5>CDN</h5>
+    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/responsivr&quot;/&gt;</code></pre>
+
+    <h5>NPM</h5>
+    <pre><code>$ npm install responsivr</code></pre>
+  </section>
+
+  <section id="guide" class="container">
+    <h3 class="header">GUIDE</h3>
+    <p class="content">Here is a guide of all the things styled by Responsivr, how to use the grid, and how to use some components.</p>
+    <div class="guide-section">
+      <h3 class="header">TYPOGRAPHY</h3>
+      <p class="content">Responsivr styles based on <code>rem</code> units. All <code>rem</code> units are converted to base 10, so <code>1rem</code>        is equal to <code>10px</code>. By default, all headings, paragraphs, and code use system fonts, using the most modern
+        one available on a user's operating system.</p>
+      <div class="row">
+        <div class="col">
+          <h1>H1 Heading</h1>
+          <h2>H2 Heading</h2>
+          <h3>H3 Heading</h3>
+          <h4>H4 Heading</h4>
+          <h5>H5 Heading</h5>
+          <h6>H6 Heading</h6>
+        </div>
+        <div class="col">
+          <p>Paragraph</p>
+          <p><strong>Bold</strong></p>
+          <p><i>Italic</i></p>
+          <a href="#">Links</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-section">
+      <h3 class="header">GRID</h3>
+      <p class="content">Responsivr comes with a minimal, 960px, 12 column grid, with intuitive class names.</p>
+      <div class="grid-demo">
+        <div class="row">
+          <div class="col center">1</div>
+          <div class="col center">2</div>
+          <div class="col center">3</div>
+          <div class="col center">4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-section">
+      <h3>BUTTONS</h3>
+      <p class="content">Responsivr styles buttons with two main styles, filled and outlined. These styles can easily be overwritten, and are
+        there to provide a base for buttons.</p>
+      <div class="row">
+        <div class="col">
+          <button>Default Button</button>
+        </div>
+        <div class="col">
+          <p>This button is available by default, available with:</p><code>&lt;button&gt;Content&lt;/button&gt;</code>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="outline">Outlined Button</button>
+        </div>
+        <div class="col">
+          <p>This button is available with a single class, available with:</p><code>&lt;button class='outline'&gt;Content&lt;/button&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-section">
+      <h3>FORMS</h3>
+      <p class="content">Responsivr styles all common form elements with basic, clean styles.</p>
+      <div class="row">
+        <div class="col">
+          <label>Name</label>
+          <input type="text" placeholder="John Doe" />
+        </div>
+        <div class="col">
+          <label>Type</label>
+        <select name="type">
+          <option value="message">Message</option>
+          <option value="feature">Feature</option>
+          <option value="report">Report</option>
+        </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label>Message</label>
+          <textarea placeholder="Greetings..."></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;/&gt;
+&lt;input type=&quot;email&quot; placeholder=&quot;What is your email?&quot;/&gt;
+&lt;textarea placeholder=&quot;Additional details...&quot;&gt;&lt;/textarea&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-section">
+      <h3>NAVIGATION</h3>
+      <p class="content">Responsivr comes with a simple, customizable navigation component.</p>
+      <div class="nav">
+        <h5 class="nav-logo">Logo</h5>
+        <a class="nav-item" href="#">Item</a>
+        <a class="nav-item" href="#">Item</a>
+        <a class="nav-item" href="#">Item</a>
+      </div>
+      <pre><code>&lt;div class=&quot;nav&quot;&gt;
+&lt;h5 class=&quot;nav-logo&quot;&gt;Logo&lt;/h5&gt;
+&lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+&lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+&lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+      <p>All items have a class of <code>nav-item</code>, and an optional logo with the class of <code>nav-logo</code> can be
+        added. Combined with utilities (below) such as <code>fixed</code>, <code>left</code>, <code>right</code>, or
+        <code>center</code>, a navigation can be customized to your needs.</p>
+    </div>
+
+    <div class="guide-section">
+      <h3>UTILITIES</h3>
+      <p class="content">Responsivr provides some basic utility classes to speed up development.</p>
+      <ul>
+        <li><code>text-center</code> - center align text</li>
+        <li><code>center</code> - align items within element in the center</li>
+        <li><code>horizontal-align</code> - horizontally align an element</li>
+        <li><code>vertical-align</code> - vertical align an element</li>
+        <li><code>left</code> - align children to the left</li>
+        <li><code>right</code> - align children to the right</li>
+        <li><code>full-screen</code> - make element full screen</li>
+        <li><code>fixed</code> - make element full width and fixed</li>
+        <li><code>hide-phone</code> - hide elements on a phone</li>
+        <li><code>hide-tablet</code> - hide elements on a tablet</li>
+      </ul>
+    </div>
+  </section>
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+$font-path: "../fonts" !default;
+
+$h1-font-size: 4.0rem !default;
+$h2-font-size: 3.6rem !default;
+$h3-font-size: 3.0rem !default;
+$h4-font-size: 2.4rem !default;
+$h5-font-size: 1.8rem !default;
+$h6-font-size: 1.5rem !default;
+
+$phone-screen-up: 601px !default;
+$tablet-screen-up: 961px !default;
+$desktop-screen-up: 1281px !default;
+$phone-screen: 600px !default;
+$tablet-screen: 960px !default;
+$desktop-screen: 1280px !default;
+
+$tablet-and-up: "only screen and (min-width : #{$phone-screen-up})" !default;
+$desktop-and-up: "only screen and (min-width : #{$tablet-screen-up})" !default;
+$phone-and-down: "only screen and (max-width : #{$phone-screen})" !default;
+$tablet-and-down: "only screen and (max-width : #{$tablet-screen})" !default;
+$tablet-only: "only screen and (min-width : #{$phone-screen-up}) and (max-width : #{$tablet-screen})" !default;

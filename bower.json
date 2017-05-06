@@ -1,0 +1,24 @@
+{
+  "name": "responsivr",
+  "description": "Yet another framework CSS.",
+  "main": "dist/responsivr.min.css",
+  "authors": [
+    "Rafael Franco"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "responsivr",
+    "css",
+    "framework",
+    "responsive",
+    "css",
+    "lightweight"
+  ],
+  "homepage": "https://rfoel.github.io/responsivr/",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

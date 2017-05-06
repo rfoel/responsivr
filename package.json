@@ -1,37 +1,44 @@
 {
   "name": "responsivr",
-  "version": "1.0.0",
+  "filename": "responsivr.min.css",
+  "version": "1.0.0-beta",
   "description": "Yet another framework CSS.",
-  "main": "index.js",
+  "main": "./dist/responsivr.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Testing\"",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rfoel/responsivr.git"
   },
-  "keywords": [
-    "Framework",
-    "CSS",
-    "responsive"
-  ],
-  "author": "Rafael Franco",
+  "author": "Kabir Shah",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rfoel/responsivr/issues"
   },
-  "homepage": "https://github.com/rfoel/responsivr#readme",
+  "homepage": "https://rfoel.github.io/responsivr/",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/rfoel/responsivr.git",
+    "basePath": "dist",
+    "files": [
+      "responsivr.min.css",
+      "responsivr.css"
+    ]
+  },
   "devDependencies": {
-    "browser-sync": "^2.18.7",
+    "bower": "latest",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-pug": "^3.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.1.1",
-    "gulp-uglify": "^2.0.1",
-    "gulp-uglifycss": "^1.0.6",
-    "jquery": "^3.1.1",
-    "jquery.easing": "^1.4.1"
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "latest",
+    "gulp-git": "^1.9.0",
+    "gulp-header": "^1.8.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "latest",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-util": "~2.2.9",
+    "owl-tool": "0.0.3"
   }
 }

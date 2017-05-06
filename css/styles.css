@@ -1,0 +1,8 @@
+header {
+  height: 90vh;
+}
+
+.grid-demo .col {
+  background: #f2f2f2;
+  padding: 50px;
+}
