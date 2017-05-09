@@ -1,6 +1,6 @@
 {
   "name": "responsivr",
-  "description": "Yet another framework CSS.",
+  "description": "Yet another CSS framework.",
   "main": "dist/responsivr.min.css",
   "authors": [
     "Rafael Franco"

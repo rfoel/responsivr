@@ -2,7 +2,7 @@
   "name": "responsivr",
   "filename": "responsivr.min.css",
   "version": "1.0.0-beta",
-  "description": "Yet another framework CSS.",
+  "description": "Yet another CSS framework.",
   "main": "./dist/responsivr.min.css",
   "scripts": {
     "test": "echo \"Testing\"",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "bower": "latest",
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.1",
     "gulp-concat": "latest",

@@ -11,7 +11,9 @@ h6 {
   font-weight: 300;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   letter-spacing: -.1rem;
 }
 
@@ -69,6 +71,14 @@ h6 {
   }
 }
 
+/*------------------------------------------------------------
+  Text styles
+------------------------------------------------------------*/
+
+.thin {
+  font-weight: 200;
+}
+
 .light {
   font-weight: 300;
 }
@@ -78,15 +88,11 @@ h6 {
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .bolder {
-  font-weight: 700;
-}
-
-.boldest {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .italic {
@@ -95,4 +101,14 @@ h6 {
 
 .justify {
   text-align: justify;
+}
+
+/*------------------------------------------------------------
+  Links
+------------------------------------------------------------*/
+
+a {
+  color: $link-color;
+  font-family: 'Roboto' !important;
+  text-decoration: none;
 }

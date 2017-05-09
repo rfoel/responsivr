@@ -1,3 +1,3 @@
 # responsivr
 
-Yet another framework CSS.
+Yet another CSS framework.

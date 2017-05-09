@@ -5,13 +5,33 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A minimal css framework.">
+  <meta name="description" content="Yet another CSS framework.">
   <meta name="author" content="Rafael Franco">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-  <title>responsivr</title>
+  <title>Responsivr</title>
 
   <link rel="stylesheet" type="text/css" href="./dist/responsivr.css" />
   <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <script async defer src="https://buttons.github.io/buttons.js"></script>  
 </head>
 
 <body>
@@ -24,9 +44,9 @@
     </div>
   </div>
   <header class="container center">
-    <img src="./img/logo.svg" alt="Responsivr Logo" height="150">
-    <h3>responsivr</h3>
-    <h5>Yet another framework CSS.</h5>
+    <img src="./img/responsivr.svg" alt="Responsivr Logo" height="150">
+    <h1 class="thin">RESPONSIVR</h1>
+    <h5>Yet another CSS framework.</h5>
   </header>
   <section id="features" class="container">
     <h3 class="header">FEATURES</h3>
@@ -78,8 +98,12 @@
         </div>
         <div class="col">
           <p>Paragraph</p>
-          <p><strong>Bold</strong></p>
-          <p><i>Italic</i></p>
+          <p class="italic">Italic</p>
+          <p class="thin">Thin</p>
+          <p class="light">Light</p>
+          <p class="normal">Normal</p>
+          <p class="bold">Bold</p>
+          <p class="bolder">Bolder</p>
           <a href="#">Links</a>
         </div>
       </div>
@@ -143,14 +167,7 @@
           <textarea placeholder="Greetings..."></textarea>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;/&gt;
-&lt;input type=&quot;email&quot; placeholder=&quot;What is your email?&quot;/&gt;
-&lt;textarea placeholder=&quot;Additional details...&quot;&gt;&lt;/textarea&gt;</code></pre>
-        </div>
-      </div>
-    </div>
+  </div>
 
     <div class="guide-section">
       <h3>NAVIGATION</h3>
@@ -161,12 +178,6 @@
         <a class="nav-item" href="#">Item</a>
         <a class="nav-item" href="#">Item</a>
       </div>
-      <pre><code>&lt;div class=&quot;nav&quot;&gt;
-&lt;h5 class=&quot;nav-logo&quot;&gt;Logo&lt;/h5&gt;
-&lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
-&lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
-&lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
-&lt;/div&gt;</code></pre>
       <p>All items have a class of <code>nav-item</code>, and an optional logo with the class of <code>nav-logo</code> can be
         added. Combined with utilities (below) such as <code>fixed</code>, <code>left</code>, <code>right</code>, or
         <code>center</code>, a navigation can be customized to your needs.</p>
@@ -189,8 +200,5 @@
       </ul>
     </div>
   </section>
-
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
-
 </html>
