@@ -532,7 +532,7 @@ input[type=text], input[type=password], input[type=email], input[type=search], i
   background: #eee;
   border-radius: 0;
   border: 2px solid transparent;
-  font-size: 1.3rem;
+  font-size: 1rem;
   box-sizing: border-box;
   transition: all .25s ease; }
 
@@ -657,14 +657,14 @@ li {
   Misc
 ------------------------------------------------------------*/
 code {
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 90%;
   background: #eee;
   width: 100%; }
 
 pre > code {
   display: block;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 1rem 1.5rem; }
 
 /*------------------------------------------------------------
@@ -812,7 +812,8 @@ html {
 
 body {
   letter-spacing: 0.01em;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-size: inherit; }
 
 .thin {
   font-weight: 200; }

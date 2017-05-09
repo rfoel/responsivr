@@ -3,7 +3,7 @@
 ------------------------------------------------------------*/
 
 code {
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 90%;
   background: #eee;
   width: 100%;
@@ -11,6 +11,6 @@ code {
 
 pre>code {
   display: block;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 1rem 1.5rem;
 }
