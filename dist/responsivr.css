@@ -591,7 +591,9 @@ textarea, textarea[type=text] {
   -ms-flex: 1;
   flex: 1; }
 
-.col, [class^='col-'], [class*=" col-"] {
+.col,
+[class^='col-'],
+[class*=" col-"] {
   margin-left: 4%; }
 
 .col-1 {
@@ -631,7 +633,11 @@ textarea, textarea[type=text] {
   flex: 12; }
 
 @media screen and (max-width: 768px) {
-  .col, [class^='col-'], [class*=" col-"] {
+  .container {
+    width: 90%; }
+  .col,
+  [class^='col-'],
+  [class*=" col-"] {
     margin: 1rem 0;
     flex: 0 0 100%; } }
 
@@ -666,6 +672,7 @@ code {
   width: 100%; }
 
 pre > code {
+  box-sizing: border-box;
   display: block;
   overflow-x: scroll;
   padding: 1rem 1.5rem; }
