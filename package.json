@@ -1,7 +1,7 @@
 {
   "name": "responsivr",
   "filename": "responsivr.min.css",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Yet another CSS framework.",
   "main": "./dist/responsivr.min.css",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/rfoel/responsivr.git"
   },
-  "author": "Kabir Shah",
+  "author": "Rafael Franco",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rfoel/responsivr/issues"
