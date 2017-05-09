@@ -4,14 +4,12 @@
 
 code {
   padding: 0.5rem;
-  margin: 0 0.2rem;
   font-size: 90%;
   background: #eee;
   width: 100%;
 }
 
-pre > code {
-  box-sizing: border-box;
+pre>code {
   display: block;
   overflow-x: scroll;
   padding: 1rem 1.5rem;
