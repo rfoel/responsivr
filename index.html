@@ -7,24 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Yet another CSS framework.">
   <meta name="author" content="Rafael Franco">
-  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="/img/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <title>Responsivr</title>
@@ -49,7 +32,7 @@
     <h5>Yet another CSS framework.</h5>
   </header>
   <section id="features" class="container">
-    <h3 class="header">FEATURES</h3>
+    <h3 class="center">FEATURES</h3>
     <div class="row">
       <div class="col">
         <h5 class="text-center">Intuitive</h5>
@@ -70,7 +53,7 @@
     </div>
   </section>
   <section id="installation" class="container">
-    <h3>INSTALLATION</h3>
+    <h3 class="center">INSTALLATION</h3>
     <p class="content">You can install Responsivr in multiple ways, but it's as simple as adding a single <code>link</code> tag to your project.</p>
 
     <h5>CDN</h5>
@@ -81,10 +64,10 @@
   </section>
 
   <section id="guide" class="container">
-    <h3 class="header">GUIDE</h3>
+    <h3 class="center">GUIDE</h3>
     <p class="content">Here is a guide of all the things styled by Responsivr, how to use the grid, and how to use some components.</p>
     <div class="guide-section">
-      <h3 class="header">TYPOGRAPHY</h3>
+      <h3 class="center">TYPOGRAPHY</h3>
       <p class="content">Responsivr styles based on <code>rem</code> units. All <code>rem</code> units are converted to base 10, so <code>1rem</code>        is equal to <code>10px</code>. By default, all headings, paragraphs, and code use system fonts, using the most modern
         one available on a user's operating system.</p>
       <div class="row">
@@ -110,7 +93,7 @@
     </div>
 
     <div class="guide-section">
-      <h3 class="header">GRID</h3>
+      <h3 class="center">GRID</h3>
       <p class="content">Responsivr comes with a minimal, 960px, 12 column grid, with intuitive class names.</p>
       <div class="grid-demo">
         <div class="row">
@@ -123,29 +106,31 @@
     </div>
 
     <div class="guide-section">
-      <h3>BUTTONS</h3>
+      <h3 class="center">BUTTONS</h3>
       <p>Responsivr styles buttons with two main styles, filled and outlined. These styles can easily be overwritten, and are
         there to provide a base for buttons.</p>
       <div class="row">
         <div class="col">
-          <button>Default Button</button>
+          <a class="btn">Button</a>
+          <a class="btn disabled">Button</a>
         </div>
         <div class="col">
-          <p>This button is available by default, available with:</p><code>&lt;button&gt;Content&lt;/button&gt;</code>
+          <p>This button is available by default, available with:</p><code>&lt;a class='btn'&gt;Content&lt;/a&gt;</code>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <button class="outline">Outlined Button</button>
+          <a class="btn-outline">Button</a>
+          <a class="btn-outline disabled">Button</a>
         </div>
         <div class="col">
-          <p>This button is available with a single class, available with:</p><code>&lt;button class='outline'&gt;Content&lt;/button&gt;</code>
+          <p>This button is available with a single class, available with:</p><code>&lt;a class='btn-outline'&gt;Content&lt;/a&gt;</code>
         </div>
       </div>
     </div>
 
     <div class="guide-section">
-      <h3>FORMS</h3>
+      <h3 class="center">FORMS</h3>
       <p class="content">Responsivr styles all common form elements with basic, clean styles.</p>
       <div class="row">
         <div class="col">
@@ -170,7 +155,7 @@
   </div>
 
     <div class="guide-section">
-      <h3>NAVIGATION</h3>
+      <h3 class="center">NAVIGATION</h3>
       <p class="content">Responsivr comes with a simple, customizable navigation component.</p>
       <div class="nav">
         <h5 class="nav-logo">Logo</h5>
@@ -184,7 +169,7 @@
     </div>
 
     <div class="guide-section">
-      <h3>UTILITIES</h3>
+      <h3 class="center">UTILITIES</h3>
       <p class="content">Responsivr provides some basic utility classes to speed up development.</p>
       <ul>
         <li><code>text-center</code> - center align text</li>

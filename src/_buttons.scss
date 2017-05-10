@@ -2,44 +2,61 @@
   Buttons
 ------------------------------------------------------------*/
 
-button,
-[type=submit] {
-  padding: 1.1rem 3.5rem;
-  margin: 1rem 0;
-  background: $button-color;
-  color: $button-text-color;
+.btn,
+.btn-outline {
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 16px;
+  margin: 1rem .5rem;
   border-radius: 0;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   transition: all .2s ease;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  &:active {
+    transform: scale(.99);
+  }
 }
 
-button.outline,
-[type=submit].outline {
-  padding: 1.1rem 3.5rem;
+.btn {
+  background: $button-color;
+  color: $button-text-color;
+  &:hover,
+  [type=submit]:hover {
+    background: lighten($button-color, 5%);
+  }
+  &:focus {
+    outline: none;
+  }
+  &.disabled {
+    pointer-events: none;
+    color: $disabled-color;
+    background: lighten($disabled-color, 15%);
+  }
+}
+
+.btn-outline {
   background: none;
   color: $button-color;
-  border: 1.5px solid $button-color;
-}
-
-button:hover,
-[type=submit]:hover {
-  background: lighten($button-color, 5%);
-}
-
-button.outline:hover,
-[type=submit].outline:hover {
-  background: none;
-  border: 1.5px solid lighten($button-color, 20%);
-  color: lighten($button-color, 20%);
-}
-
-button:focus,
-[type=submit]:focus {
-  outline: none;
-}
-
-button:active,
-[type=submit]:active {
-  transform: scale(.99);
+  border: 2px solid $button-color;
+  &:hover {
+    background: none;
+    border: 2px solid lighten($button-color, 20%);
+    color: lighten($button-color, 20%);
+  }
+  &.disabled {
+    pointer-events: none;
+    color: $disabled-color;
+    border-color: $disabled-color
+  }
 }
