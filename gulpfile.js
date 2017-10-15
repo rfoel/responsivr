@@ -17,7 +17,6 @@ gulp.task("sass", () => {
     .pipe(sass().on("error", sass.logError))
     .pipe($.concat("responsivr.css"))
     .pipe($.header(comment + "\n"))
-    .pipe($.size())
     .pipe(gulp.dest("./dist/"))
 })
 
@@ -26,7 +25,6 @@ gulp.task("minify", ["build"], () => {
     .src(["./dist/responsivr.css"])
     .pipe(minifyCSS())
     .pipe($.header(comment))
-    .pipe($.size())
     .pipe(
       $.size({
         gzip: true
