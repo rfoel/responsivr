@@ -28,17 +28,13 @@
     ]
   },
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-cli": "^1.2.1",
-    "gulp-concat": "latest",
-    "gulp-git": "^1.9.0",
-    "gulp-header": "^1.8.2",
-    "gulp-load-plugins": "^1.2.4",
-    "gulp-minify-css": "latest",
-    "gulp-sass": "^3.1.0",
-    "gulp-size": "^2.1.0",
-    "gulp-util": "~2.2.9",
-    "owl-tool": "0.0.3"
+    "browser-sync": "",
+    "gulp": "",
+    "gulp-cli": "",
+    "gulp-concat": "",
+    "gulp-header": "",
+    "gulp-load-plugins": "",
+    "gulp-minify-css": "",
+    "gulp-sass": ""
   }
 }
