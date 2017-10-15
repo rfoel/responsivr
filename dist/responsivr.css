@@ -766,7 +766,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 
 h1,
 h2,
@@ -820,7 +821,7 @@ h6 {
 html {
   font-size: 16px;
   color: #212121;
-  font-family: 'Roboto'; }
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
   @media (max-width: 550px) {
     html {
       font-size: 14px; } }
@@ -856,8 +857,8 @@ body {
 ------------------------------------------------------------*/
 a {
   color: #039be5;
-  font-family: 'Roboto' !important;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 
 /*------------------------------------------------------------
   Utilities
