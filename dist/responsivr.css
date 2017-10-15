@@ -405,11 +405,29 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.yellow-light {
+  background-color: #ffe187 !important; }
+
+.yellow-light-text {
+  color: #ffe187 !important; }
+
 .yellow {
-  background-color: #ffeb3b !important; }
+  background-color: #ffc107 !important; }
 
 .yellow-text {
-  color: #ffeb3b !important; }
+  color: #ffc107 !important; }
+
+.yellow-dark {
+  background-color: #d39e00 !important; }
+
+.yellow-dark-text {
+  color: #d39e00 !important; }
+
+.red-light {
+  background-color: #fbb4af !important; }
+
+.red-light-text {
+  color: #fbb4af !important; }
 
 .red {
   background-color: #f44336 !important; }
@@ -417,11 +435,35 @@ html {
 .red-text {
   color: #f44336 !important; }
 
+.red-dark {
+  background-color: #ea1c0d !important; }
+
+.red-dark-text {
+  color: #ea1c0d !important; }
+
+.blue-light {
+  background-color: #9acffa !important; }
+
+.blue-light-text {
+  color: #9acffa !important; }
+
 .blue {
   background-color: #2196f3 !important; }
 
 .blue-text {
   color: #2196f3 !important; }
+
+.blue-dark {
+  background-color: #0c7cd5 !important; }
+
+.blue-dark-text {
+  color: #0c7cd5 !important; }
+
+.orange-light {
+  background-color: #ffcc80 !important; }
+
+.orange-light-text {
+  color: #ffcc80 !important; }
 
 .orange {
   background-color: #ff9800 !important; }
@@ -429,11 +471,35 @@ html {
 .orange-text {
   color: #ff9800 !important; }
 
+.orange-dark {
+  background-color: #cc7a00 !important; }
+
+.orange-dark-text {
+  color: #cc7a00 !important; }
+
+.purple-light {
+  background-color: #d176e1 !important; }
+
+.purple-light-text {
+  color: #d176e1 !important; }
+
 .purple {
   background-color: #9c27b0 !important; }
 
 .purple-text {
   color: #9c27b0 !important; }
+
+.purple-dark {
+  background-color: #771e86 !important; }
+
+.purple-dark-text {
+  color: #771e86 !important; }
+
+.green-light {
+  background-color: #a3d7a5 !important; }
+
+.green-light-text {
+  color: #a3d7a5 !important; }
 
 .green {
   background-color: #4caf50 !important; }
@@ -441,11 +507,29 @@ html {
 .green-text {
   color: #4caf50 !important; }
 
+.green-dark {
+  background-color: #3d8b40 !important; }
+
+.green-dark-text {
+  color: #3d8b40 !important; }
+
+.grey-light {
+  background-color: #dedede !important; }
+
+.grey-light-text {
+  color: #dedede !important; }
+
 .grey {
   background-color: #9e9e9e !important; }
 
 .grey-text {
   color: #9e9e9e !important; }
+
+.grey-dark {
+  background-color: #858585 !important; }
+
+.grey-dark-text {
+  color: #858585 !important; }
 
 /*------------------------------------------------------------
   Buttons
