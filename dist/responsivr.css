@@ -405,6 +405,48 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.yellow {
+  background-color: #ffeb3b !important; }
+
+.yellow-text {
+  color: #ffeb3b !important; }
+
+.red {
+  background-color: #f44336 !important; }
+
+.red-text {
+  color: #f44336 !important; }
+
+.blue {
+  background-color: #2196f3 !important; }
+
+.blue-text {
+  color: #2196f3 !important; }
+
+.orange {
+  background-color: #ff9800 !important; }
+
+.orange-text {
+  color: #ff9800 !important; }
+
+.purple {
+  background-color: #9c27b0 !important; }
+
+.purple-text {
+  color: #9c27b0 !important; }
+
+.green {
+  background-color: #4caf50 !important; }
+
+.green-text {
+  color: #4caf50 !important; }
+
+.grey {
+  background-color: #9e9e9e !important; }
+
+.grey-text {
+  color: #9e9e9e !important; }
+
 /*------------------------------------------------------------
   Buttons
 ------------------------------------------------------------*/
