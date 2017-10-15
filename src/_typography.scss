@@ -79,7 +79,6 @@ h6 {
 html {
   font-size: 16px;
   color: $text-color;
-  font-family: 'Roboto';
   @media (max-width: 550px) {
     font-size: 14px;
   }
@@ -126,6 +125,5 @@ body {
 
 a {
   color: $link-color;
-  font-family: 'Roboto' !important;
   text-decoration: none;
 }
