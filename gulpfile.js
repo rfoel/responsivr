@@ -2,11 +2,11 @@
 
 const gulp = require("gulp")
 const sass = require("gulp-sass")
-const package = require("./package.json")
+const pkg = require("./package.json")
 const minifyCSS = require("gulp-minify-css")
 const comment =
   "/*\r\n* Responsivr " +
-  package.version +
+  pkg.version +
   "\r\n* Copyright 2017, Rafael Franco\r\n* https://rfoel.github.io/responsivr/\r\n* Free to use under the MIT license.\r\n */\r\n"
 const $ = require("gulp-load-plugins")()
 const browserSync = require("browser-sync").create()
